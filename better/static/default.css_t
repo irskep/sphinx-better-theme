@@ -279,6 +279,8 @@ pre {
     color: {{ theme_codetextcolor }};
     border-left: none;
     border-right: none;
+    font-size: 0.8rem;
+    line-height: 1rem;
 }
 
 tt {
