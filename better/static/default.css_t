@@ -1,0 +1,314 @@
+/*
+ * default.css_t
+ * ~~~~~~~~~~~~~
+ *
+ * Sphinx stylesheet -- default theme.
+ *
+ * :copyright: Copyright 2007-2013 by the Sphinx team, see AUTHORS.
+ * :license: BSD, see LICENSE for details.
+ *
+ */
+
+@import url("basic.css");
+
+/* -- page layout ----------------------------------------------------------- */
+
+body {
+    font-family: {{ theme_bodyfont }};
+    font-size: 100%;
+    /* footer styling */
+    color: #000;
+    margin: 0;
+    padding: 0;
+    line-height: 130%;
+}
+
+div.document {
+    width: 100%;
+    max-width: {{ theme_totalwidth }};
+    margin: auto;
+    margin-top: 2rem;
+    /* sidebar styling */
+}
+
+div.documentwrapper {
+    float: left;
+    width: 100%;
+}
+
+div.bodywrapper {
+    margin: 0 0 0 {{ theme_sidebarwidth }};
+}
+
+div.body {
+    width: {{ theme_bodywidth }};
+    background-color: {{ theme_bgcolor }};
+    color: {{ theme_textcolor }};
+}
+
+{%- if theme_rightsidebar|tobool %}
+div.bodywrapper {
+    margin: 0 {{ theme_sidebarwidth }} 0 0;
+}
+{%- endif %}
+
+div.sourcelink {
+    margin-top: 2rem;
+}
+
+div.footer {
+    color: {{ theme_footertextcolor }};
+    width: 100%;
+    padding: 9px 0 9px 0;
+    text-align: center;
+    font-size: 75%;
+}
+
+div.footer a {
+    color: {{ theme_footertextcolor }};
+    text-decoration: underline;
+}
+
+div.related {
+    line-height: 30px;
+    color: {{ theme_relbartextcolor }};
+    max-width: 100%;
+    width: {{ theme_totalwidth }};
+    margin: auto;
+}
+
+div.related a {
+    color: {{ theme_linkcolor }};
+}
+
+div.sphinxsidebarwrapper {
+    padding: 0;
+}
+
+div.sphinxsidebar {
+    width: {{ theme_sidebarwidth }}
+    {%- if theme_stickysidebar|tobool %}
+    top: 30px;
+    bottom: 0;
+    margin: 0;
+    position: fixed;
+    overflow: auto;
+    height: auto;
+    {%- endif %}
+    {%- if theme_rightsidebar|tobool %}
+    float: right;
+    {%- if theme_stickysidebar|tobool %}
+    right: 0;
+    {%- endif %}
+    {%- endif %}
+}
+
+{%- if theme_stickysidebar|tobool %}
+/* this is nice, but it it leads to hidden headings when jumping
+   to an anchor */
+/*
+div.related {
+    position: fixed;
+}
+
+div.documentwrapper {
+    margin-top: 30px;
+}
+*/
+{%- endif %}
+
+div.sphinxsidebar h3 a {
+    color: {{ theme_sidebartextcolor }};
+}
+
+div.sphinxsidebar h4 {
+    font-family: {{ theme_headfont }};
+    color: {{ theme_sidebartextcolor }};
+    font-size: 1.3em;
+    font-weight: normal;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+div.sphinxsidebar p {
+    color: {{ theme_sidebartextcolor }};
+}
+
+div.sphinxsidebar p.topless {
+    margin: 5px 10px 10px 10px;
+}
+
+div.sphinxsidebar ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2rem;
+    color: {{ theme_sidebartextcolor }};
+}
+
+div.sphinxsidebar a {
+    color: {{ theme_linkcolor }};
+}
+
+div.sphinxsidebar input {
+    border: 1px solid {{ theme_linkcolor }};
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+/* -- hyperlink styles ------------------------------------------------------ */
+
+a {
+    color: {{ theme_linkcolor }};
+    text-decoration: none;
+}
+
+a:visited {
+    color: {{ theme_visitedlinkcolor }};
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+{% if theme_externalrefs|tobool %}
+a.external {
+    text-decoration: none;
+    border-bottom: 1px dashed {{ theme_linkcolor }};
+}
+
+a.external:hover {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+a.external:visited {
+    text-decoration: none;
+    border-bottom: 1px dashed {{ theme_visitedlinkcolor }};
+}
+{% endif %}
+
+/* body styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: {{ theme_headerverticalspacing }};
+    margin-bottom: {{ theme_headerverticalspacing }};
+    font-family: {{ theme_headfont }};
+    color: {{ theme_headtextcolor }};
+    line-height: 1em;
+}
+
+h1 { font-size: 1.5rem; font-weight: bold; }
+h2 { font-size: 1.5rem; font-weight: normal; }
+h3 { font-size: 1.25rem; font-weight: bold; }
+h4 { font-size: 1.25rem; font-weight: normal; }
+h5 { font-size: 1rem; font-weight: bold; }
+h6 { font-size: 1rem; font-weight: normal; }
+
+a.headerlink {
+    color: {{ theme_linkcolor }};
+    font-size: 0.8em;
+    padding: 0 4px 0 4px;
+    text-decoration: none;
+}
+
+a.headerlink:hover {
+    background-color: {{ theme_linkcolor }};
+    color: white;
+}
+
+div.body p, div.body dd, div.body li {
+    text-align: justify;
+    line-height: 130%;
+}
+
+div.admonition p.admonition-title + p {
+    display: inline;
+}
+
+div.admonition p {
+    margin-bottom: 5px;
+}
+
+div.admonition pre {
+    margin-bottom: 5px;
+}
+
+div.admonition ul, div.admonition ol {
+    margin-bottom: 5px;
+}
+
+div.note {
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+
+div.seealso {
+    background-color: #ffc;
+    border: 1px solid #ff6;
+}
+
+div.topic {
+    background-color: #eee;
+}
+
+div.warning {
+    background-color: #ffe4e4;
+    border: 1px solid #f66;
+}
+
+p.admonition-title {
+    display: inline;
+}
+
+p.admonition-title:after {
+    content: ":";
+}
+
+pre {
+    margin-left: -5px;
+    margin-right: -5px;
+    padding: 5px;
+    background-color: {{ theme_codebgcolor }};
+    font-family: {{ theme_codefont }}
+    color: {{ theme_codetextcolor }};
+    border-left: none;
+    border-right: none;
+}
+
+tt {
+    background-color: #ecf0f3;
+    padding: 0 1px 0 1px;
+    font-size: 0.95em;
+}
+
+.warning tt {
+    background: #efc2c2;
+}
+
+.note tt {
+    background: #d6d6d6;
+}
+
+.viewcode-back {
+    font-family: {{ theme_bodyfont }};
+}
+
+div.viewcode-block:target {
+    background-color: #f4debf;
+    border-top: 1px solid #ac9;
+    border-bottom: 1px solid #ac9;
+}
+
+/* table styling */
+
+/* Python domain styling */
+
+.literal {
+    font-family: {{ theme_codefont }};
+}
