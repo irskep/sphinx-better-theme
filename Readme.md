@@ -12,3 +12,9 @@ So far, only the first two goals have been met. [Open a ticket] if you'd like
 something changed.
 
 [Open a ticket]: https://github.com/irskep/sphinx-better-theme
+
+Slight word of warning
+----------------------
+
+Since the body text is limited to 35em, this theme will not work well with
+projects whose docs have large tables.
