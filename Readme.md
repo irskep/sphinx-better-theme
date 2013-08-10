@@ -1,5 +1,5 @@
-Better Sphinx Default Theme
-===========================
+A Better Sphinx Default Theme
+=============================
 
 This is a modified version of the Sphinx default theme with the following
 goals:
@@ -11,4 +11,4 @@ goals:
 So far, only the first two goals have been met. [Open a ticket] if you'd like
 something changed.
 
-[Open a ticket]: https://github.com/irskep/better-sphinx-default-theme
+[Open a ticket]: https://github.com/irskep/sphinx-better-theme
