@@ -1,17 +1,4 @@
-/*
- * default.css_t
- * ~~~~~~~~~~~~~
- *
- * Sphinx stylesheet -- default theme.
- *
- * :copyright: Copyright 2007-2013 by the Sphinx team, see AUTHORS.
- * :license: BSD, see LICENSE for details.
- *
- */
-
 @import url("basic.css");
-
-/* -- page layout ----------------------------------------------------------- */
 
 body {
     font-family: {{ theme_bodyfont }};
@@ -40,17 +27,17 @@ div.bodywrapper {
     margin: 0 0 0 {{ theme_sidebarwidth }};
 }
 
-div.body {
-    width: {{ theme_bodywidth }};
-    background-color: {{ theme_bgcolor }};
-    color: {{ theme_textcolor }};
-}
-
 {%- if theme_rightsidebar|tobool %}
 div.bodywrapper {
     margin: 0 {{ theme_sidebarwidth }} 0 0;
 }
 {%- endif %}
+
+div.body {
+    width: {{ theme_bodywidth }};
+    background-color: {{ theme_bgcolor }};
+    color: {{ theme_textcolor }};
+}
 
 div.sourcelink {
     margin-top: 2rem;
@@ -86,7 +73,7 @@ div.sphinxsidebarwrapper {
 }
 
 div.sphinxsidebar {
-    width: {{ theme_sidebarwidth }}
+    width: {{ theme_sidebarwidth }};
     {%- if theme_stickysidebar|tobool %}
     top: 30px;
     bottom: 0;
