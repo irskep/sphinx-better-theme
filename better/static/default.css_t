@@ -121,15 +121,6 @@ div.sphinxsidebar h3 a {
     color: {{ theme_sidebartextcolor }};
 }
 
-div.sphinxsidebar h4 {
-    font-family: {{ theme_headfont }};
-    color: {{ theme_sidebartextcolor }};
-    font-size: 1.3em;
-    font-weight: normal;
-    margin: 5px 0 0 0;
-    padding: 0;
-}
-
 div.sphinxsidebar p {
     color: {{ theme_sidebartextcolor }};
 }
