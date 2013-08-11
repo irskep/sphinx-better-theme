@@ -10,7 +10,9 @@
 
 {%- if theme_showheader|tobool %}
   {%- block header %}
-    <header><h1>{{ project }} {{ version }}</h1></header>
+  <header><h1><a href="{{ pathto(master_doc) }} ">
+      {{ project }} {{ version }}
+  </a></h1></header>
   {%- endblock %}
 {%- endif %}
 
@@ -20,41 +22,41 @@
 {%- endif %}
 
 {%- block footer %}
-    <div class="footer">
+  <div class="footer">
 
-      {%- if show_copyright %}
-        {%- if hasdoc('copyright') %}
-          {% trans path=pathto('copyright'), copyright=copyright|e %}
-            <a href="{{ path }}">&copy; {{ copyright }} </a>.
-          {% endtrans %}
-        {%- else %}
-          {%- trans copyright=copyright|e -%}
-            &copy; {{ copyright }}.
-          {%- endtrans %}
-        {%- endif %}
-      {%- endif %}
-
-      {%- if last_updated %}
-        {%- trans last_updated=last_updated|e -%}
-          Last updated on {{ last_updated }}.
+    {%- if show_copyright %}
+      {%- if hasdoc('copyright') %}
+        {% trans path=pathto('copyright'), copyright=copyright|e %}
+          <a href="{{ path }}">&copy; {{ copyright }} </a>.
+        {% endtrans %}
+      {%- else %}
+        {%- trans copyright=copyright|e -%}
+          &copy; {{ copyright }}.
         {%- endtrans %}
       {%- endif %}
+    {%- endif %}
 
-      {%- if show_sphinx %}
-        Created using <a href="http://sphinx-doc.org/">Sphinx</a>
-        {{ sphinx_version }}
-        {%- if theme_linktotheme|tobool %}
-          with the <a href="http://github.com/irskep/sphinx-better-theme">
-            better</a> theme
-        {%- endif %}.
-      {%- else %}
-        {%- if theme_linktotheme %}
-          This site uses the
-          <a href="http://github.com/irskep/sphinx-better-theme">
-          &ldquo;better&rdquo;</a>
-          theme for Sphinx.
-        {%- endif %}
+    {%- if last_updated %}
+      {%- trans last_updated=last_updated|e -%}
+        Last updated on {{ last_updated }}.
+      {%- endtrans %}
+    {%- endif %}
+
+    {%- if show_sphinx %}
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a>
+      {{ sphinx_version }}
+      {%- if theme_linktotheme|tobool %}
+        with the <a href="http://github.com/irskep/sphinx-better-theme">
+          better</a> theme
+      {%- endif %}.
+    {%- else %}
+      {%- if theme_linktotheme %}
+        This site uses the
+        <a href="http://github.com/irskep/sphinx-better-theme">
+        &ldquo;better&rdquo;</a>
+        theme for Sphinx.
       {%- endif %}
+    {%- endif %}
 
-    </div>
+  </div>
 {%- endblock %}

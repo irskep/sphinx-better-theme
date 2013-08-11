@@ -99,7 +99,7 @@ div.sphinxsidebar {
     {%- endif %}
 }
 
-div.sphinxsidebar h3 a {
+div.sphinxsidebar h3 a, body > header h1 a {
     color: {{ theme_sidebartextcolor }};
 }
 
