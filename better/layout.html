@@ -8,6 +8,17 @@
 {%- include "sourcelink.html" %}
 {%- endblock %}
 
+{%- if theme_showheader|tobool %}
+  {%- block header %}
+    <header><h1>{{ project }} {{ version }}</h1></header>
+  {%- endblock %}
+{%- endif %}
+
+{%- if not theme_showrelbar|tobool %}
+  {%- block relbar1 %}{% endblock %}
+  {%- block relbar2 %}{% endblock %}
+{%- endif %}
+
 {%- block footer %}
     <div class="footer">
 
@@ -32,12 +43,12 @@
       {%- if show_sphinx %}
         Created using <a href="http://sphinx-doc.org/">Sphinx</a>
         {{ sphinx_version }}
-        {%- if theme_link_to_theme|tobool %}
+        {%- if theme_linktotheme|tobool %}
           with the <a href="http://github.com/irskep/sphinx-better-theme">
             better</a> theme
         {%- endif %}.
       {%- else %}
-        {%- if theme_show_better %}
+        {%- if theme_linktotheme %}
           This site uses the
           <a href="http://github.com/irskep/sphinx-better-theme">
           &ldquo;better&rdquo;</a>

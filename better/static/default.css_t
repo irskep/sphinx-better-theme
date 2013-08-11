@@ -1,5 +1,12 @@
 @import url("basic.css");
 
+{% macro top_level_sizing() %}
+    width: 100%;
+    max-width: {{ theme_totalwidth }};
+    margin: auto;
+{% endmacro %}
+
+
 body {
     font-family: {{ theme_bodyfont }};
     font-size: 100%;
@@ -11,9 +18,7 @@ body {
 }
 
 div.document {
-    width: 100%;
-    max-width: {{ theme_totalwidth }};
-    margin: auto;
+    {{ top_level_sizing() }}
     margin-top: 2rem;
     /* sidebar styling */
 }
@@ -43,12 +48,16 @@ div.sourcelink {
     margin-top: 2rem;
 }
 
+body > header {
+    {{ top_level_sizing() }}
+}
+
 div.footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     color: {{ theme_footertextcolor }};
-    width: 100%;
-    padding: 9px 0 9px 0;
     text-align: center;
-    font-size: 75%;
+    {{ top_level_sizing() }}
 }
 
 div.footer a {
@@ -59,14 +68,14 @@ div.footer a {
 div.related {
     line-height: 30px;
     color: {{ theme_relbartextcolor }};
-    max-width: 100%;
-    width: {{ theme_totalwidth }};
-    margin: auto;
+    {{ top_level_sizing() }}
 }
 
 div.related a {
     color: {{ theme_linkcolor }};
 }
+
+/* sidebar */
 
 div.sphinxsidebarwrapper {
     padding: 0 1rem 0 0;
@@ -89,20 +98,6 @@ div.sphinxsidebar {
     {%- endif %}
     {%- endif %}
 }
-
-{%- if theme_stickysidebar|tobool %}
-/* this is nice, but it it leads to hidden headings when jumping
-   to an anchor */
-/*
-div.related {
-    position: fixed;
-}
-
-div.documentwrapper {
-    margin-top: 30px;
-}
-*/
-{%- endif %}
 
 div.sphinxsidebar h3 a {
     color: {{ theme_sidebartextcolor }};
@@ -133,7 +128,7 @@ div.sphinxsidebar input {
     font-size: 1em;
 }
 
-/* -- hyperlink styles ------------------------------------------------------ */
+/*  hyperlink styles */
 
 a {
     color: {{ theme_linkcolor }};
