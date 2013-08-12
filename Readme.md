@@ -12,7 +12,7 @@ goals:
 So far, only goals 1 and 2 have been met. [Open a ticket] if you'd like
 something changed.
 
-[Open a ticket]: https://github.com/irskep/sphinx-better-theme
+[Open a ticket]: https://github.com/irskep/sphinx-better-theme/issues/new
 
 Slight word of warning
 ----------------------
