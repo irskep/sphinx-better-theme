@@ -1,5 +1,5 @@
-A Better Sphinx Default Theme
-=============================
+A Better Sphinx Theme
+=====================
 
 This is a modified version of the Sphinx default theme with the following
 goals:
