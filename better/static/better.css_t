@@ -9,11 +9,11 @@
     margin: auto;
 {% endmacro %}
 
+/* main styles */
 
 body {
     font-family: {{ theme_bodyfont }};
     font-size: 100%;
-    /* footer styling */
     color: {{ theme_textcolor }}
     background-color: {{ theme_bgcolor }};
     margin: 0;
