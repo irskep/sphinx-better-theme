@@ -1,5 +1,8 @@
 @import url("basic.css");
 
+{% set theme_sidebarheadlinkcolor = theme_sidebarheadlinkcolor or theme_linkcolor %}
+{% set theme_headtextcolor = theme_headtextcolor or theme_textcolor %}
+
 {% macro top_level_sizing() %}
     width: 100%;
     max-width: {{ theme_totalwidth }};
@@ -94,8 +97,12 @@ div.sphinxsidebar {
     {%- endif %}
 }
 
-div.sphinxsidebar h3 a, body > header h1 a, body > header h1 a:visited {
-    color: {{ theme_sidebartextcolor }};
+body > header h1 a, body > header h1 a:visited {
+    color: {{ theme_headtextcolor }};
+}
+
+div.sphinxsidebar h3 a {
+    color: {{ theme_sidebarheadlinkcolor }};
 }
 
 div.sphinxsidebar p {
