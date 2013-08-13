@@ -11,7 +11,8 @@ body {
     font-family: {{ theme_bodyfont }};
     font-size: 100%;
     /* footer styling */
-    color: #000;
+    color: {{ theme_textcolor }}
+    background-color: {{ theme_bgcolor }};
     margin: 0;
     padding: 0;
     line-height: 130%;
@@ -37,12 +38,6 @@ div.bodywrapper {
     margin: 0 {{ theme_sidebarwidth }} 0 0;
 }
 {%- endif %}
-
-div.body {
-    width: {{ theme_bodywidth }};
-    background-color: {{ theme_bgcolor }};
-    color: {{ theme_textcolor }};
-}
 
 div.sourcelink {
     margin-top: 2rem;
@@ -193,10 +188,6 @@ a.headerlink {
 a.headerlink:hover {
     background-color: {{ theme_linkcolor }};
     color: white;
-}
-
-div.body p, div.body dd, div.body li {
-    line-height: 130%;
 }
 
 div.admonition p.admonition-title + p {
