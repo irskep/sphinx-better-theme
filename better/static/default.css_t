@@ -173,7 +173,7 @@ h6 {
     margin-bottom: {{ theme_headerverticalspacing }};
     font-family: {{ theme_headfont }};
     color: {{ theme_headtextcolor }};
-    line-height: 1em;
+    line-height: 130%;
 }
 
 h1 { font-size: 1.5rem; font-weight: bold; }
