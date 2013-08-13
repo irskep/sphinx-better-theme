@@ -2,12 +2,13 @@
 
 {% set theme_sidebarheadlinkcolor = theme_sidebarheadlinkcolor or theme_linkcolor %}
 {% set theme_headtextcolor = theme_headtextcolor or theme_textcolor %}
+{% set theme_relbartextcolor = theme_relbartextcolor or theme_textcolor %}
+{% set theme_sidebartextcolor = theme_sidebartextcolor or theme_textcolor %}
+{% set theme_footertextcolor = theme_footertextcolor or theme_textcolor %}
 
-{% macro top_level_sizing() %}
-    width: 100%;
-    max-width: {{ theme_totalwidth }};
-    margin: auto;
-{% endmacro %}
+{% set theme_sidebarlinkcolor  = theme_sidebarlinkcolor  or theme_linkcolor %}
+{% set theme_relbarlinkcolor = theme_relbarlinkcolor or theme_linkcolor %}
+{% set theme_footerlinkcolor = theme_footerlinkcolor or theme_linkcolor %}
 
 /* main styles */
 
@@ -21,10 +22,45 @@ body {
     line-height: 130%;
 }
 
+a {
+    color: {{ theme_linkcolor }};
+    text-decoration: none;
+}
+
+a:visited {
+    color: {{ theme_visitedlinkcolor }};
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: {{ theme_headerverticalspacing }};
+    margin-bottom: {{ theme_headerverticalspacing }};
+    font-family: {{ theme_headfont }};
+    color: {{ theme_headtextcolor }};
+    line-height: 130%;
+}
+
+h1 { font-size: 1.5rem; font-weight: bold; }
+h2 { font-size: 1.5rem; font-weight: normal; }
+h3 { font-size: 1.25rem; font-weight: bold; }
+h4 { font-size: 1.25rem; font-weight: normal; }
+h5 { font-size: 1rem; font-weight: bold; }
+h6 { font-size: 1rem; font-weight: normal; }
+
+/* layout of containers */
+
+header#pageheader, footer#pagefooter, div.related, div.document {
+    width: 100%;
+    max-width: {{ theme_totalwidth }};
+    margin: auto;
+}
+
 div.document {
-    {{ top_level_sizing() }}
     margin-top: 2rem;
-    /* sidebar styling */
 }
 
 div.documentwrapper {
@@ -33,44 +69,38 @@ div.documentwrapper {
 }
 
 div.bodywrapper {
-    margin: 0 0 0 {{ theme_sidebarwidth }};
-}
-
-{%- if theme_rightsidebar|tobool %}
-div.bodywrapper {
+    {% if theme_rightsidebar|tobool -%}
     margin: 0 {{ theme_sidebarwidth }} 0 0;
-}
-{%- endif %}
-
-div.sourcelink {
-    margin-top: 2rem;
+    {%- else -%}
+    margin: 0 0 0 {{ theme_sidebarwidth }};
+    {%- endif %}
 }
 
-body > header {
-    {{ top_level_sizing() }}
-}
-
-div.footer {
+footer#pagefooter {
     padding-top: 2rem;
     padding-bottom: 2rem;
     color: {{ theme_footertextcolor }};
     text-align: center;
-    {{ top_level_sizing() }}
 }
 
-div.footer a {
+footer#pagefooter a {
     color: {{ theme_footertextcolor }};
     text-decoration: underline;
 }
 
+/* relbar */
+
 div.related {
     line-height: 30px;
     color: {{ theme_relbartextcolor }};
-    {{ top_level_sizing() }}
 }
 
 div.related a {
     color: {{ theme_linkcolor }};
+}
+
+div.related ul {
+    padding: 0;
 }
 
 /* sidebar */
@@ -125,26 +155,21 @@ div.sphinxsidebar a {
 }
 
 div.sphinxsidebar input {
-    border: 1px solid {{ theme_linkcolor }};
-    font-family: sans-serif;
-    font-size: 1em;
+    font-family: {{ theme_bodyfont }};
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    border: 1px solid {{ theme_sidebarsearchbordercolor }};
+    font-size: 1rem;
+}
+
+div.sourcelink {
+    margin-top: 2rem;
 }
 
 /*  hyperlink styles */
-
-a {
-    color: {{ theme_linkcolor }};
-    text-decoration: none;
-}
-
-a:visited {
-    color: {{ theme_visitedlinkcolor }};
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
 
 {% if theme_externalrefs|tobool %}
 a.external {
@@ -164,26 +189,6 @@ a.external:visited {
 {% endif %}
 
 /* body styles */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin-top: {{ theme_headerverticalspacing }};
-    margin-bottom: {{ theme_headerverticalspacing }};
-    font-family: {{ theme_headfont }};
-    color: {{ theme_headtextcolor }};
-    line-height: 130%;
-}
-
-h1 { font-size: 1.5rem; font-weight: bold; }
-h2 { font-size: 1.5rem; font-weight: normal; }
-h3 { font-size: 1.25rem; font-weight: bold; }
-h4 { font-size: 1.25rem; font-weight: normal; }
-h5 { font-size: 1rem; font-weight: bold; }
-h6 { font-size: 1rem; font-weight: normal; }
 
 a.headerlink {
     color: {{ theme_linkcolor }};

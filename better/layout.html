@@ -10,19 +10,21 @@
 
 {%- if theme_showheader|tobool %}
   {%- block header %}
-  <header><h1><a href="{{ pathto(master_doc) }} ">
+  <header id="pageheader"><h1><a href="{{ pathto(master_doc) }} ">
       {{ project }} {{ version }}
   </a></h1></header>
   {%- endblock %}
 {%- endif %}
 
-{%- if not theme_showrelbar|tobool %}
-  {%- block relbar1 %}{% endblock %}
-  {%- block relbar2 %}{% endblock %}
-{%- endif %}
+{%- block relbar1 -%}
+{% if theme_showrelbar|tobool %}{{ super() }}{% endif %}
+{%- endblock -%}
+{%- block relbar2 -%}
+{% if theme_showrelbar|tobool %}{{ super() }}{% endif %}
+{%- endblock -%}
 
 {%- block footer %}
-  <div class="footer">
+  <footer id="pagefooter">
 
     {%- if show_copyright %}
       {%- if hasdoc('copyright') %}
@@ -58,5 +60,5 @@
       {%- endif %}
     {%- endif %}
 
-  </div>
+  </footer>
 {%- endblock %}
