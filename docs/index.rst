@@ -59,12 +59,14 @@ subjective improvements over the default theme and other built-in themes:
    <http://practicaltypography.com/typography-in-ten-minutes.html>`_ Some
    projects make use of the full width to display tables, but many projects do
    just fine without them.
-4. Semantic markup (work in progress). The default theme is a sea of
-   ``<div>`` tags. Even if the much-heralded machine-readable web never pans
-   out, it strikes me as a nice symmetry to have a program's documentation
-   be easily consumable by other programs. It can also make CSS rules clearer.
-5. Better customization. The default theme hard-codes several color values that
+4. Better customization. The default theme hard-codes several color values that
    would look terrible with different color settings.
+
+A future version of this theme will have semantic markup.  The default theme
+is a sea of ``<div>`` tags. Even if the much-heralded machine-readable web
+never pans out, it strikes me as a nice symmetry to have a program's
+documentation be easily consumable by other programs. It can also make CSS
+rules clearer.
 
 Why encourage customization?
 ----------------------------
@@ -95,9 +97,10 @@ How does this theme encourage customization better than the default?
 
 1. There are more variables to customize.
 2. The markup and CSS are easier to understand.
-3. The templates use more granular blocks for easier overriding of specific
-   parts of the page.
-4. The basic look of the theme is subjectively better.
+3. The basic look of the theme is subjectively better.
+
+Additionally, a future version of this template will use more granular blocks
+for easier overriding of specific parts of the page.
 
 Why not just contribute to Sphinx itself?
 -----------------------------------------
