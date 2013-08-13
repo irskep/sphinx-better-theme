@@ -43,9 +43,8 @@ both themes are problematic for many projects. Specifically, they are difficult
 to customize beyond a few inconsequential color and layout settings. Their
 markup and stylesheets do not lend themselves to tweaking.
 
-Additionally, I have a few subjective problems with the default Sphinx theme
-(and the other built-in themes) that I think ``better-sphinx-theme`` at least
-partially solves:
+Additionally, ``better-sphinx-theme`` contains a few differences that offer
+subjective improvements over the default theme and other built-in themes:
 
 1. Less unnecessary color and fewer different colors. I'm not opposed to the
    use of color on the web. I just think it's more professional to use a
