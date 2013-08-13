@@ -32,11 +32,11 @@ Usage
 I'm waiting until I get a regular release cycle to implement a PyPI-based
 installation procedure.
 
-I haven't written the configuration/extension guide yet, so the rest of this
-page will just be an anticipatory FAQ.
+Anticipatory FAQ
+----------------
 
 Better how?
------------
+^^^^^^^^^^^
 
 The default Sphinx theme isn't bad, and the Python 3 theme is even better. But
 both themes are problematic for many projects. Specifically, they are difficult
@@ -69,7 +69,7 @@ documentation be easily consumable by other programs. It can also make CSS
 rules clearer.
 
 Why encourage customization?
-----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Branding is important for even small projects. Take a quick look at `the
 built-in Sphinx themes. <http://sphinx-doc.org/theming.html#builtin-themes>`_
@@ -93,7 +93,7 @@ same goes for the difference betwen `Python 2's documentation
 documentation. <http://docs.python.org/3.3/library/argparse.html>`_
 
 How does this theme encourage customization better than the default?
---------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. There are more variables to customize.
 2. The markup and CSS are easier to understand.
@@ -103,7 +103,7 @@ Additionally, a future version of this template will use more granular blocks
 for easier overriding of specific parts of the page.
 
 Why not just contribute to Sphinx itself?
------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 I'll probably make an attempt eventually. For now I'd just like to validate my
 ideas.
