@@ -1,10 +1,10 @@
 sphinx-better-theme
 ===================
 
-This project is a work in progress. I take documentation very seriously and
-won't officially "release" anything until I'm satisfied with it. You can track
-my progress by looking at the `remaining issues on Github
-<https://github.com/irskep/sphinx-better-theme/issues>`_.
+*This project is a work in progress by one person. I take documentation very
+seriously and won't officially "release" anything until I'm satisfied with it.
+You can track my progress by looking at the* `remaining issues on Github
+<https://github.com/irskep/sphinx-better-theme/issues>`_. *–Steve*
 
 .. toctree::
    :maxdepth: 2
