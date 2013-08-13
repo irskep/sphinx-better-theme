@@ -14,7 +14,7 @@
 body {
     font-family: {{ theme_bodyfont }};
     font-size: 100%;
-    color: {{ theme_textcolor }}
+    color: {{ theme_textcolor }};
     background-color: {{ theme_bgcolor }};
     margin: 0;
     padding: 0;
