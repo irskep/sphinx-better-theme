@@ -8,20 +8,19 @@
 {%- include "sourcelink.html" %}
 {%- endblock %}
 
-{%- if theme_showheader|tobool %}
-  {%- block header %}
-  <header id="pageheader"><h1><a href="{{ pathto(master_doc) }} ">
-      {{ project }} {{ version }}
-  </a></h1></header>
-  {%- endblock %}
-{%- endif %}
+{%- block header %}
+  {%- if theme_showheader|tobool %}
+    <header id="pageheader"><h1><a href="{{ pathto(master_doc) }} ">
+        {{ project }} {{ version }}
+    </a></h1></header>
+  {%- endif %}
+{%- endblock %}
 
 {%- block relbar1 -%}
 {% if theme_showrelbar|tobool %}{{ super() }}{% endif %}
 {%- endblock -%}
-{%- block relbar2 -%}
-{% if theme_showrelbar|tobool %}{{ super() }}{% endif %}
-{%- endblock -%}
+{# never show the bottom relbar #}
+{%- block relbar2 -%}{%- endblock -%}
 
 {%- block footer %}
   <footer id="pagefooter">

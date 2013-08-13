@@ -107,3 +107,12 @@ Why not just contribute to Sphinx itself?
 
 I'll probably make an attempt eventually. For now I'd just like to validate my
 ideas.
+
+Roadmap
+-------
+
+**v0.1:** Basic CSS-customizable style that looks nice in its default state
+
+**v0.2:** Drop inheritance of ``basic`` theme and rewrite markup
+
+**v1.0:** Extreme documentation polish and rounding out of edge cases

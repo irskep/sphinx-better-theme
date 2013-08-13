@@ -59,10 +59,6 @@ header#pageheader, footer#pagefooter, div.related, div.document {
     margin: auto;
 }
 
-div.document {
-    margin-top: 2rem;
-}
-
 div.documentwrapper {
     float: left;
     width: 100%;
@@ -74,6 +70,10 @@ div.bodywrapper {
     {%- else -%}
     margin: 0 0 0 {{ theme_sidebarwidth }};
     {%- endif %}
+}
+
+header#pageheader {
+  margin-bottom: 2rem;
 }
 
 footer#pagefooter {
