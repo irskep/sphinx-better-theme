@@ -41,7 +41,8 @@ Better how?
 The default Sphinx theme isn't bad, and the Python 3 theme is even better. But
 both themes are problematic for many projects. Specifically, they are difficult
 to customize beyond a few inconsequential color and layout settings. Their
-markup and stylesheets do not lend themselves to tweaking.
+markup and stylesheets do not lend themselves to tweaking. This project aims to
+mitigate those problems.
 
 Additionally, ``better-sphinx-theme`` contains a few differences that offer
 subjective improvements over the default theme and other built-in themes:
