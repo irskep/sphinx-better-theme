@@ -2,10 +2,13 @@ sphinx-better-theme
 ===================
 
 .. note::
-    *This project is a work in progress by one person. I take documentation very
-    seriously and won't officially "release" anything until I'm satisfied with it.
-    You can track my progress by looking at the* `remaining issues on Github
-    <https://github.com/irskep/sphinx-better-theme/issues>`_. *–Steve*
+
+    *This project is a work in progress by one person. I take documentation
+    very seriously and won't officially "release" anything until I'm satisfied
+    with it.  You can track my progress by looking at the* `remaining issues
+    on Github <https://github.com/irskep/sphinx-better-theme/issues>`_.
+
+    *–Steve*
 
 Other pages:
 
