@@ -98,8 +98,8 @@ Epigraph
 
   -- Buckaroo Banzai
 
-Compound
-^^^^^^^^
+Compound paragraph
+^^^^^^^^^^^^^^^^^^
 
 .. compound::
 
@@ -110,6 +110,9 @@ Compound
        rm -rf *
 
    you will erase the entire contents of your file system.
+
+Raw HTML
+^^^^^^^^
 
 .. raw:: html
 
