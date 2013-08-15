@@ -106,6 +106,7 @@ div.related {
     color: {{ theme_relbartextcolor }};
     border-bottom: 1px solid #aaa;
     width: 100%;
+    font-size: 0.9rem;
 }
 
 div.related a {
@@ -143,6 +144,7 @@ div.sphinxsidebarwrapper {
 div.sphinxsidebar {
     width: {{ theme_sidebarwidth }};
     margin-left: -100%;
+    font-size: 0.9rem;
     {%- if theme_rightsidebar|tobool %}
     float: right;
     {%- else %}
