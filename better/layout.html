@@ -1,5 +1,12 @@
 {%- extends "basic/layout.html" %}
 
+{%- block extrahead %}
+  {%- if theme_inlinecss %}
+    <style type="text/css">{{ theme_inlinecss|safe }}</style>{%- endif %}
+  {%- block userhead %}
+  {%- endblock %}
+{%- endblock %}
+
 {%- block sidebarsearch %}
   {%- if theme_enablesidebarsearch|tobool %}{{ super() }}{%- endif %}
 {% endblock %}

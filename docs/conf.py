@@ -15,7 +15,9 @@ exclude_patterns = ['_build']
 pygments_style = 'sphinx'
 
 html_theme = 'better'
-html_theme_options = {}
+html_theme_options = {
+    'inlinecss': """ """
+}
 html_theme_path = ['..']
 html_title = "{} {} documentation".format(project, release)
 html_short_title = html_title
