@@ -16,12 +16,12 @@ body {
 }
 
 a {
-    color: {{ theme_linkcolor }};
+    color: #008;
     text-decoration: none;
 }
 
 a:visited {
-    color: {{ theme_visitedlinkcolor }};
+    color: #208;
     text-decoration: none;
 }
 
@@ -99,10 +99,6 @@ div.related {
     font-size: 0.9rem;
 }
 
-div.related a {
-    color: {{ theme_linkcolor }};
-}
-
 div.related ul {
     padding: 0;
     margin: 0;
@@ -168,10 +164,6 @@ div.sphinxsidebar ul ul {
     margin-bottom: 0;
 }
 
-div.sphinxsidebar a {
-    color: {{ theme_linkcolor }};
-}
-
 div.sphinxsidebar input {
     font-family: {{ theme_bodyfont }};
     box-sizing: border-box;
@@ -189,24 +181,18 @@ div.sourcelink {
 /* body styles */
 
 a.headerlink {
-    color: {{ theme_linkcolor }};
     font-size: 0.8em;
     padding: 0 4px 0 4px;
     text-decoration: none;
-}
-
-a.headerlink:hover {
-    background-color: {{ theme_linkcolor }};
-    color: white;
 }
 
 pre {
     margin-left: -5px;
     margin-right: -5px;
     padding: 5px;
-    background-color: {{ theme_codebgcolor }};
+    background-color: #eee;
     font-family: {{ theme_codefont }}
-    color: {{ theme_codetextcolor }};
+    color: #333;
     border-left: none;
     border-right: none;
     font-size: 0.8rem;
