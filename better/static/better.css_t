@@ -166,9 +166,12 @@ div.sphinxsidebar input {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     height: 1.5rem;
-    line-height: 1.5rem;
     border: 1px solid {{ theme_sidebarsearchbordercolor }};
     font-size: 1rem;
+}
+
+div.sphinxsidebar #searchbox input[type="submit"] {
+    width: auto;
 }
 
 div.sourcelink {
