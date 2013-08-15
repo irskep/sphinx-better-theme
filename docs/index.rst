@@ -15,8 +15,7 @@ Other pages:
 .. toctree::
    :maxdepth: 2
 
-   sphinx_demo.rst
-   rst_demo.rst
+   demos.rst
 
 Usage
 -----
