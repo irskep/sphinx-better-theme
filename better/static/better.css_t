@@ -6,10 +6,9 @@
 /* main styles */
 
 body {
-    font-family: {{ theme_bodyfont }};
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 100%;
     color: {{ theme_textcolor }};
-    background-color: {{ theme_bgcolor }};
     margin: 0;
     padding: 0;
     line-height: 130%;
@@ -36,7 +35,6 @@ a.toc-backref {
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
-    font-family: {{ theme_headfont }};
     color: {{ theme_headtextcolor }};
     line-height: 130%;
 }
@@ -88,6 +86,35 @@ footer#pagefooter a {
 
 body > header h1 a, body > header h1 a:visited {
     color: {{ theme_headtextcolor }};
+}
+
+a.headerlink {
+    font-size: 0.8em;
+    padding: 0 4px 0 4px;
+    text-decoration: none;
+}
+
+/* code styles */
+
+pre, tt {
+    background-color: #eee;
+    color: #333;
+    font-family: Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre {
+    margin-left: -5px;
+    margin-right: -5px;
+    padding: 5px;
+    border-left: none;
+    border-right: none;
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+
+tt {
+    padding: 0 1px 0 1px;
+    font-size: 0.95rem;
 }
 
 /* relbar */
@@ -165,7 +192,6 @@ div.sphinxsidebar ul ul {
 }
 
 div.sphinxsidebar input {
-    font-family: {{ theme_bodyfont }};
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -176,34 +202,6 @@ div.sphinxsidebar input {
 
 div.sourcelink {
     margin-top: 2rem;
-}
-
-/* body styles */
-
-a.headerlink {
-    font-size: 0.8em;
-    padding: 0 4px 0 4px;
-    text-decoration: none;
-}
-
-pre {
-    margin-left: -5px;
-    margin-right: -5px;
-    padding: 5px;
-    background-color: #eee;
-    font-family: {{ theme_codefont }}
-    color: #333;
-    border-left: none;
-    border-right: none;
-    font-size: 0.8rem;
-    line-height: 1rem;
-}
-
-tt {
-    font-family: {{ theme_codefont }};
-    background-color: #ecf0f3;
-    padding: 0 1px 0 1px;
-    font-size: 0.95em;
 }
 
 /* paragraph-level markup */
@@ -258,10 +256,6 @@ div.warning {
 
 .note tt {
     background: #d6d6d6;
-}
-
-.viewcode-back {
-    font-family: {{ theme_bodyfont }};
 }
 
 div.viewcode-block:target {
