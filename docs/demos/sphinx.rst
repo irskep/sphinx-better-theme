@@ -141,7 +141,7 @@ References
 
 :doc:`A link to the index document <../index>`
 
-:download:`Download this demo (demo.rst) <sphinx_demo.rst>`
+:download:`Download this demo (demo.rst) <sphinx.rst>`
 
 :envvar:`ENV_VAR`
 

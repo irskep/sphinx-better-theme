@@ -16,11 +16,16 @@ pygments_style = 'sphinx'
 
 html_theme = 'better'
 html_theme_options = {
-    'inlinecss': """ """
+    'inlinecss': """
+        .related {
+            border-bottom: 1px solid #aaa;
+        }
+    """,
+    'showrelbar': True
 }
 html_theme_path = ['..']
-html_title = "{} {} documentation".format(project, release)
-html_short_title = html_title
+html_title = "{} {}".format(project, release)
+html_short_title = "Home"
 
 html_logo = None
 html_favicon = None
