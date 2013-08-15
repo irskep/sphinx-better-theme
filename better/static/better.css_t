@@ -1,15 +1,7 @@
 @import url("better_basic.css");
 
-{% set theme_sidebarheadlinkcolor = theme_sidebarheadlinkcolor or
-theme_textcolor %}
 {% set theme_headtextcolor = theme_headtextcolor or theme_textcolor %}
-{% set theme_relbartextcolor = theme_relbartextcolor or theme_textcolor %}
-{% set theme_sidebartextcolor = theme_sidebartextcolor or theme_textcolor %}
 {% set theme_footertextcolor = theme_footertextcolor or theme_textcolor %}
-
-{% set theme_sidebarlinkcolor  = theme_sidebarlinkcolor  or theme_linkcolor %}
-{% set theme_relbarlinkcolor = theme_relbarlinkcolor or theme_linkcolor %}
-{% set theme_footerlinkcolor = theme_footerlinkcolor or theme_linkcolor %}
 
 /* main styles */
 
@@ -103,7 +95,6 @@ body > header h1 a, body > header h1 a:visited {
 
 div.related {
     line-height: 30px;
-    color: {{ theme_relbartextcolor }};
     border-bottom: 1px solid #aaa;
     width: 100%;
     font-size: 0.9rem;
@@ -153,11 +144,7 @@ div.sphinxsidebar {
 }
 
 div.sphinxsidebar h3 a {
-    color: {{ theme_sidebarheadlinkcolor }};
-}
-
-div.sphinxsidebar p {
-    color: {{ theme_sidebartextcolor }};
+    color: {{ theme_headtextcolor }};
 }
 
 div.sphinxsidebar p.topless {
@@ -168,7 +155,6 @@ div.sphinxsidebar ul {
     margin: 0;
     padding: 0;
     margin-bottom: 2rem;
-    color: {{ theme_sidebartextcolor }};
     list-style: none;
 }
 
