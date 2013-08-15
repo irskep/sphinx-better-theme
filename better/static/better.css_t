@@ -142,19 +142,11 @@ div.sphinxsidebarwrapper {
 
 div.sphinxsidebar {
     width: {{ theme_sidebarwidth }};
-    {%- if theme_stickysidebar|tobool %}
-    top: 30px;
-    bottom: 0;
-    margin: 0;
-    position: fixed;
-    overflow: auto;
-    height: auto;
-    {%- endif %}
+    margin-left: -100%;
     {%- if theme_rightsidebar|tobool %}
     float: right;
-    {%- if theme_stickysidebar|tobool %}
-    right: 0;
-    {%- endif %}
+    {%- else %}
+    float: left;
     {%- endif %}
 }
 
@@ -175,6 +167,18 @@ div.sphinxsidebar ul {
     padding: 0;
     margin-bottom: 2rem;
     color: {{ theme_sidebartextcolor }};
+    list-style: none;
+}
+
+div.sphinxsidebar ul ul,
+div.sphinxsidebar ul.want-points {
+    margin-left: 20px;
+    list-style: square;
+}
+
+div.sphinxsidebar ul ul {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 div.sphinxsidebar a {

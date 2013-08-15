@@ -6,38 +6,6 @@ div.clearer {
     clear: both;
 }
 
-/* -- sidebar --------------------------------------------------------------- */
-
-div.sphinxsidebarwrapper {
-    padding: 10px 5px 0 10px;
-}
-
-div.sphinxsidebar {
-    float: left;
-    width: {{ theme_sidebarwidth|toint }}px;
-    margin-left: -100%;
-    font-size: 90%;
-}
-
-div.sphinxsidebar ul {
-    list-style: none;
-}
-
-div.sphinxsidebar ul ul,
-div.sphinxsidebar ul.want-points {
-    margin-left: 20px;
-    list-style: square;
-}
-
-div.sphinxsidebar ul ul {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-img {
-    border: 0;
-}
-
 /* -- search page ----------------------------------------------------------- */
 
 ul.search {
