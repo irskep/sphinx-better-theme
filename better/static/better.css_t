@@ -36,6 +36,10 @@ a:hover {
     text-decoration: underline;
 }
 
+a.toc-backref {
+    color: {{ theme_headtextcolor }};
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin-top: {{ theme_headerverticalspacing }};
     margin-bottom: {{ theme_headerverticalspacing }};
@@ -51,7 +55,7 @@ h4 { font-size: 1.25rem; font-weight: normal; }
 h5 { font-size: 1rem; font-weight: bold; }
 h6 { font-size: 1rem; font-weight: normal; }
 
-/* layout of containers */
+/* page-level layout of containers */
 
 header#pageheader, footer#pagefooter, div.related, div.document {
     width: 100%;
@@ -73,7 +77,7 @@ div.bodywrapper {
 }
 
 header#pageheader {
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 footer#pagefooter {
@@ -86,6 +90,12 @@ footer#pagefooter {
 footer#pagefooter a {
     color: {{ theme_footertextcolor }};
     text-decoration: underline;
+}
+
+/* header styles */
+
+body > header h1 a, body > header h1 a:visited {
+    color: {{ theme_headtextcolor }};
 }
 
 /* relbar */
@@ -127,10 +137,6 @@ div.sphinxsidebar {
     {%- endif %}
 }
 
-body > header h1 a, body > header h1 a:visited {
-    color: {{ theme_headtextcolor }};
-}
-
 div.sphinxsidebar h3 a {
     color: {{ theme_sidebarheadlinkcolor }};
 }
@@ -169,25 +175,6 @@ div.sourcelink {
     margin-top: 2rem;
 }
 
-/*  hyperlink styles */
-
-{% if theme_externalrefs|tobool %}
-a.external {
-    text-decoration: none;
-    border-bottom: 1px dashed {{ theme_linkcolor }};
-}
-
-a.external:hover {
-    text-decoration: none;
-    border-bottom: none;
-}
-
-a.external:visited {
-    text-decoration: none;
-    border-bottom: 1px dashed {{ theme_visitedlinkcolor }};
-}
-{% endif %}
-
 /* body styles */
 
 a.headerlink {
@@ -201,6 +188,28 @@ a.headerlink:hover {
     background-color: {{ theme_linkcolor }};
     color: white;
 }
+
+pre {
+    margin-left: -5px;
+    margin-right: -5px;
+    padding: 5px;
+    background-color: {{ theme_codebgcolor }};
+    font-family: {{ theme_codefont }}
+    color: {{ theme_codetextcolor }};
+    border-left: none;
+    border-right: none;
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+
+tt {
+    font-family: {{ theme_codefont }};
+    background-color: #ecf0f3;
+    padding: 0 1px 0 1px;
+    font-size: 0.95em;
+}
+
+/* paragraph-level markup */
 
 div.admonition p.admonition-title + p {
     display: inline;
@@ -216,6 +225,15 @@ div.admonition pre {
 
 div.admonition ul, div.admonition ol {
     margin-bottom: 5px;
+}
+
+p.admonition-title {
+    display: inline;
+    margin-right: 0;
+}
+
+p.admonition-title:after {
+    content: ":";
 }
 
 div.note {
@@ -237,33 +255,6 @@ div.warning {
     border: 1px solid #f66;
 }
 
-p.admonition-title {
-    display: inline;
-}
-
-p.admonition-title:after {
-    content: ":";
-}
-
-pre {
-    margin-left: -5px;
-    margin-right: -5px;
-    padding: 5px;
-    background-color: {{ theme_codebgcolor }};
-    font-family: {{ theme_codefont }}
-    color: {{ theme_codetextcolor }};
-    border-left: none;
-    border-right: none;
-    font-size: 0.8rem;
-    line-height: 1rem;
-}
-
-tt {
-    background-color: #ecf0f3;
-    padding: 0 1px 0 1px;
-    font-size: 0.95em;
-}
-
 .warning tt {
     background: #efc2c2;
 }
@@ -280,12 +271,4 @@ div.viewcode-block:target {
     background-color: #f4debf;
     border-top: 1px solid #ac9;
     border-bottom: 1px solid #ac9;
-}
-
-/* table styling */
-
-/* Python domain styling */
-
-.literal {
-    font-family: {{ theme_codefont }};
 }
