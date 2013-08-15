@@ -1,6 +1,7 @@
 @import url("better_basic.css");
 
-{% set theme_sidebarheadlinkcolor = theme_sidebarheadlinkcolor or theme_linkcolor %}
+{% set theme_sidebarheadlinkcolor = theme_sidebarheadlinkcolor or
+theme_textcolor %}
 {% set theme_headtextcolor = theme_headtextcolor or theme_textcolor %}
 {% set theme_relbartextcolor = theme_relbartextcolor or theme_textcolor %}
 {% set theme_sidebartextcolor = theme_sidebartextcolor or theme_textcolor %}
