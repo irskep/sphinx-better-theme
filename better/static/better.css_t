@@ -1,4 +1,4 @@
-@import url("basic.css");
+@import url("better_basic.css");
 
 {% set theme_sidebarheadlinkcolor = theme_sidebarheadlinkcolor or theme_linkcolor %}
 {% set theme_headtextcolor = theme_headtextcolor or theme_textcolor %}
@@ -166,12 +166,8 @@ div.sphinxsidebar input {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     height: 1.5rem;
-    border: 1px solid {{ theme_sidebarsearchbordercolor }};
     font-size: 1rem;
-}
-
-div.sphinxsidebar #searchbox input[type="submit"] {
-    width: auto;
+    margin: 0;
 }
 
 div.sourcelink {
