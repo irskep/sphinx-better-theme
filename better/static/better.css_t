@@ -78,7 +78,7 @@ div.bodywrapper {
 }
 
 header#pageheader {
-    margin-bottom: 2rem;
+    padding: {{ theme_headerverticalspacing }} 0;
 }
 
 footer#pagefooter {
