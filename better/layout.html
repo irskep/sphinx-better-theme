@@ -3,6 +3,9 @@
 {%- from "relbar.html" import relbar_bottom with context %}
 
 {%- block extrahead %}
+  {%- for css_file in theme_cssfiles %}
+    <link rel="stylesheet" href="{{ pathto('_static/' + css_file, 1) }}" type="text/css" />
+  {%- endfor %}
   {%- if theme_inlinecss %}
     <style type="text/css">{{ theme_inlinecss|safe }}</style>{%- endif %}
   {%- block userhead %}

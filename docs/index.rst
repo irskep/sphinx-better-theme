@@ -13,12 +13,13 @@ sphinx-better-theme
 Other pages:
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
 
-   demos.rst
+    guide.rst
+    demos.rst
 
-Usage
------
+Quick start
+-----------
 
 1. Put the theme in your source tree. If you use git, you can add
    ``sphinx-better-theme``'s repository as a submodule::
