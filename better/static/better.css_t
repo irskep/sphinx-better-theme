@@ -103,6 +103,7 @@ body > header h1 a, body > header h1 a:visited {
 div.related {
     line-height: 30px;
     color: {{ theme_relbartextcolor }};
+    border-bottom: 1px solid #aaa;
 }
 
 div.related a {
@@ -111,6 +112,22 @@ div.related a {
 
 div.related ul {
     padding: 0;
+}
+
+nav#rellinks {
+    float: right;
+}
+
+nav#rellinks li+li:before {
+    content: "|";
+}
+
+nav#breadcrumbs li+li:before {
+    content: "»";
+}
+
+div.related li {
+    display: inline;
 }
 
 /* sidebar */

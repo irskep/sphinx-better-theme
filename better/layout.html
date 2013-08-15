@@ -1,4 +1,6 @@
 {%- extends "basic/layout.html" %}
+{%- from "relbar.html" import relbar_top with context %}
+{%- from "relbar.html" import relbar_bottom with context %}
 
 {%- block extrahead %}
   {%- if theme_inlinecss %}
@@ -18,16 +20,16 @@
 {%- block header %}
   {%- if theme_showheader|tobool %}
     <header id="pageheader"><h1><a href="{{ pathto(master_doc) }} ">
-        {{ project }} {{ version }}
+        {{ docstitle }}
     </a></h1></header>
   {%- endif %}
 {%- endblock %}
 
 {%- block relbar1 -%}
-{% if theme_showrelbar|tobool %}{{ super() }}{% endif %}
+{% if theme_showrelbar|tobool %}{{ relbar_top() }}{% endif %}
 {%- endblock -%}
 {# never show the bottom relbar #}
-{%- block relbar2 -%}{%- endblock -%}
+{%- block relbar2 -%}{{ relbar_bottom() }}{%- endblock -%}
 
 {%- block footer %}
   <footer id="pagefooter">

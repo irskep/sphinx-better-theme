@@ -17,11 +17,7 @@ pygments_style = 'sphinx'
 html_theme = 'better'
 html_theme_options = {
     'inlinecss': """
-        .related {
-            border-bottom: 1px solid #aaa;
-        }
     """,
-    'showrelbar': True
 }
 html_theme_path = ['..']
 html_title = "{} {}".format(project, release)
