@@ -122,6 +122,6 @@ Roadmap
 
 **v0.1:** Basic CSS-customizable style that looks nice in its default state
 
-**v0.2:** Drop inheritance of ``basic`` theme and rewrite markup
+**v0.2:** Rewrite markup to be semantic and customizable
 
 **v1.0:** Extreme documentation polish and rounding out of edge cases
