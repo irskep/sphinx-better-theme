@@ -34,8 +34,8 @@ a.toc-backref {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin-top: {{ theme_headerverticalspacing }};
-    margin-bottom: {{ theme_headerverticalspacing }};
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
     font-family: {{ theme_headfont }};
     color: {{ theme_headtextcolor }};
     line-height: 130%;
@@ -70,7 +70,6 @@ div.bodywrapper {
 }
 
 header#pageheader {
-    padding: {{ theme_headerverticalspacing }} 0;
 }
 
 footer#pagefooter {
