@@ -1,6 +1,9 @@
 sphinx-better-theme
 ===================
 
+**sphinx-better-theme** is a theme for Sphinx that tries to be better than the
+built-in themes. See the `Anticipatory FAQ`_ for details.
+
 .. note::
 
     *This project is a work in progress by one person. I take documentation
@@ -26,15 +29,15 @@ Quick start
 
         > git submodule add \
             https://github.com/irskep/sphinx-better-theme \
-            docs/_themes/sphinx-better-theme
+            docs/sphinx-better-theme
         > git submodule update --init
 
 2. Add the parent folder of the theme to your :file:`conf.py`. If you use the
    folder structure in the block above, you'd do it like this::
 
-        html_theme_path = ['_themes/sphinx-better-theme']
+        html_theme_path = ['sphinx-better-theme']
 
-   (because the theme path is ``_themes/sphinx-better-theme/better``.)
+   (because the theme path is ``sphinx-better-theme/better``.)
 
 3. Set ``html_theme`` to ``'better'`` in your :file:`conf.py`.
 
