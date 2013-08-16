@@ -4,6 +4,10 @@ sphinx-better-theme
 **sphinx-better-theme** is a theme for Sphinx that tries to be better than the
 built-in themes. See the `Anticipatory FAQ`_ for details.
 
+You can get the source and open issues `on Github.`_
+
+.. _on Github.: https://github.com/irskep/sphinx-better-theme
+
 .. toctree::
     :maxdepth: 2
 
@@ -33,7 +37,7 @@ improved.
    example using git::
 
         > git submodule add \
-            https://github.com/irskep/sphinx-better-theme \
+            https://github.com/irskep/sphinx-better-theme.git \
             docs/sphinx-better-theme
         > git submodule update --init
 

@@ -49,7 +49,7 @@ improved.
    example using git::
 
         > git submodule add \
-            https://github.com/irskep/sphinx-better-theme \
+            https://github.com/irskep/sphinx-better-theme.git \
             docs/sphinx-better-theme
         > git submodule update --init
 
