@@ -10,5 +10,4 @@ setup(
     license='LICENSE',
     description='A nice-looking, customizable Sphinx theme',
     long_description=open('Readme.md').read(),
-    install_requires=open('requirements.txt').read().splitlines(),
 )
