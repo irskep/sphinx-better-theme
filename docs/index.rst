@@ -15,7 +15,7 @@ You can get the source and open issues `on Github.`_
     demos.rst
 
 Compatibility
-^^^^^^^^^^^^^
+-------------
 
 sphinx-better-theme is compatible with Sphinx 0.6.4+ and Jinja 2.3.1+. Older
 versions may work but have not been tested.
