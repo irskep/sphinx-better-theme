@@ -1,9 +1,15 @@
 A Better Sphinx Theme
 =====================
 
-`**Documentation**`_
+Link to the documentation
+-------------------------
 
-`**Demo**`_
+`Documentation`_
+
+Link to demo pages
+------------------
+
+`Demo`_
 
 .. _Documentation: https://sphinx-better-theme.readthedocs.org/en/latest/
 
