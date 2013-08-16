@@ -21,16 +21,28 @@ Other pages:
     guide.rst
     demos.rst
 
-Quick start
------------
+.. _main_page_reference:
+
+Installation
+------------
+
+Method 1: Adding to your source tree
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This method is preferred due to the frequency with which sphinx-better-theme is
+improved.
 
 1. Put the theme in your source tree. If you use git, you can add
-   ``sphinx-better-theme``'s repository as a submodule::
+   ``sphinx-better-theme``'s repository as a submodule. Otherwise you can
+   `download the zip file`_ and expand it somewhere predictable. Here's an
+   example using git::
 
         > git submodule add \
             https://github.com/irskep/sphinx-better-theme \
             docs/sphinx-better-theme
         > git submodule update --init
+
+.. _download the zip file: https://github.com/irskep/sphinx-better-theme/archive/master.zip
 
 2. Add the parent folder of the theme to your :file:`conf.py`. If you use the
    folder structure in the block above, you'd do it like this::
@@ -41,8 +53,27 @@ Quick start
 
 3. Set ``html_theme`` to ``'better'`` in your :file:`conf.py`.
 
-I'm waiting until I get a regular release cycle to implement a PyPI-based
-installation procedure.
+Method 2: Installing to site-package
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If adding the theme to your source tree is impractical for some reason, or if
+you need to share it among several repositories, you can install it like a
+regular Python package.
+
+1. `Download the zip file.`_
+
+.. _Download the zip file.: https://github.com/irskep/sphinx-better-theme/archive/master.zip
+
+2. Run the usual command::
+
+    > python setup.py install
+
+3. Set ``html_theme_path`` to contain ``better.better_theme_path``, and set
+   ``html_theme`` to ``'better'``::
+
+    from better import better_theme_path
+    html_theme_path = [better_theme_path]
+    html_theme = 'better'
 
 Anticipatory FAQ
 ----------------

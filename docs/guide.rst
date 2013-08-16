@@ -13,38 +13,7 @@ This document assumes you've already set up Sphinx and have some docs written.
 Installation
 ------------
 
-Put the theme where Sphinx can find it
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-That means `download the zip file`_ and expand it somewhere
-predictable, or add it to the repository your documentation is in. Here's an
-example using git submodules::
-
-    > git submodule add \
-        https://github.com/irskep/sphinx-better-theme \
-        docs/sphinx-better-theme
-    > git submodule update --init
-
-.. _download the zip file: https://github.com/irskep/sphinx-better-theme/archive/master.zip
-
-You can't just specify the path to the theme; instead, you have to specify a
-list of directories where sphinx can look for themes by name. This list is
-called ``html_theme_path`` in your :file:`conf.py`.
-
-The path to the actual theme is :file:`sphinx-better-theme/better`, so 
-you should set ``html_theme_path`` to wherever you put
-:file:`sphinx-better-theme`. Relative paths will be relative to
-:file:`conf.py`.
-
-You also need to set ``html_theme = "better"``.
-
-For our git example above, you would set::
-
-  html_theme_path = ['sphinx-better-theme']
-  html_theme = 'better'
-
-You should now be able to run ``make html`` and see your documentation styled
-similarly to this site.
+See :ref:`main_page_reference`.
 
 Customization
 -------------
@@ -117,14 +86,13 @@ defaults::
 Adding static files
 ^^^^^^^^^^^^^^^^^^^
 
-This is all in the Sphinx docs, but I'm not about to send you all around the
-internet just to find it.
+(This is all vanilla Sphinx, but you'll need it for the next section.)
 
 #. Configure a static directory::
 
     html_static_path = ['_static']
 
-#. Put a file in it (e.g. :file:`docs/_static/cat.png`)
+#. Put a file in it (e.g. :file:`docs/_static/cat.png`).
 
 #. Use it.
 
