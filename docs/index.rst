@@ -4,22 +4,17 @@ sphinx-better-theme
 **sphinx-better-theme** is a theme for Sphinx that tries to be better than the
 built-in themes. See the `Anticipatory FAQ`_ for details.
 
-.. note::
-
-    *This project is a work in progress by one person. I take documentation
-    very seriously and won't officially "release" anything until I'm satisfied
-    with it.  You can track my progress by looking at the* `remaining issues
-    on Github <https://github.com/irskep/sphinx-better-theme/issues>`_.
-
-    *–Steve*
-
-Other pages:
-
 .. toctree::
     :maxdepth: 2
 
     guide.rst
     demos.rst
+
+Compatibility
+^^^^^^^^^^^^^
+
+sphinx-better-theme is compatible with Sphinx 0.6.4+ and Jinja 2.3.1+. Older
+versions may work but have not been tested.
 
 .. _main_page_reference:
 

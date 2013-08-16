@@ -1,22 +1,19 @@
 A Better Sphinx Theme
 =====================
 
-Link to the documentation
--------------------------
+Link to full docs
+-----------------
 
 `Documentation`_
 
-Link to demo pages
-------------------
-
 `Demo`_
-
-What is this
-------------
 
 .. _Documentation: https://sphinx-better-theme.readthedocs.org/en/latest/
 
 .. _Demo: https://sphinx-better-theme.readthedocs.org/en/latest/demos.html
+
+What is this
+------------
 
 This is a modified version of the Sphinx default theme with the following
 goals:
@@ -30,6 +27,12 @@ So far, only goals 1 and 2 have been met. `Open a ticket` if you'd like
 something changed.
 
 .. _Open a ticket: https://github.com/irskep/sphinx-better-theme/issues/new
+
+Compatibility
+^^^^^^^^^^^^^
+
+sphinx-better-theme is compatible with Sphinx 0.6.4+ and Jinja 2.3.1+. Older
+versions may work but have not been tested.
 
 Installation
 ------------
