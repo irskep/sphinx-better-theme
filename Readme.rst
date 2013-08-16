@@ -1,8 +1,8 @@
 A Better Sphinx Theme
-=====================
+---------------------
 
 Link to full docs
------------------
+^^^^^^^^^^^^^^^^^
 
 `Documentation`_
 
@@ -13,7 +13,7 @@ Link to full docs
 .. _Demo: https://sphinx-better-theme.readthedocs.org/en/latest/demos.html
 
 What is this
-------------
+^^^^^^^^^^^^
 
 This is a modified version of the Sphinx default theme with the following
 goals:
@@ -29,16 +29,16 @@ something changed.
 .. _Open a ticket: https://github.com/irskep/sphinx-better-theme/issues/new
 
 Compatibility
-^^^^^^^^^^^^^
+"""""""""""""
 
 sphinx-better-theme is compatible with Sphinx 0.6.4+ and Jinja 2.3.1+. Older
 versions may work but have not been tested.
 
 Installation
-------------
+^^^^^^^^^^^^
 
 Method 1: Adding to your source tree
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+""""""""""""""""""""""""""""""""""""
 
 This method is preferred due to the frequency with which sphinx-better-theme is
 improved.
@@ -64,8 +64,8 @@ improved.
 
 3. Set ``html_theme`` to ``'better'`` in your :file:`conf.py`.
 
-Method 2: Installing to site-package
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Method 2: Installing to site-packages
+"""""""""""""""""""""""""""""""""""""
 
 If adding the theme to your source tree is impractical for some reason, or if
 you need to share it among several repositories, you can install it like a

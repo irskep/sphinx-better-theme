@@ -48,7 +48,7 @@ improved.
 
 3. Set ``html_theme`` to ``'better'`` in your :file:`conf.py`.
 
-Method 2: Installing to site-package
+Method 2: Installing to site-packages
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If adding the theme to your source tree is impractical for some reason, or if
