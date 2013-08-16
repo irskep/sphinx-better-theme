@@ -11,6 +11,9 @@ Link to demo pages
 
 `Demo`_
 
+What is this
+------------
+
 .. _Documentation: https://sphinx-better-theme.readthedocs.org/en/latest/
 
 .. _Demo: https://sphinx-better-theme.readthedocs.org/en/latest/demos.html
