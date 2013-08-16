@@ -28,10 +28,7 @@
   {%- endif %}
 {%- endblock %}
 
-{%- block relbar1 -%}
-{% if theme_showrelbar|tobool %}{{ relbar_top() }}{% endif %}
-{%- endblock -%}
-{# never show the bottom relbar #}
+{%- block relbar1 -%}{{ relbar_top() }}{%- endblock -%}
 {%- block relbar2 -%}{{ relbar_bottom() }}{%- endblock -%}
 
 {%- block footer %}

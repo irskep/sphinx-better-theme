@@ -28,11 +28,19 @@
 {%- endmacro %}
 
 {%- macro relbar_top() %}
-  <div class="related">
+  {%- if theme_showrelbartop|tobool %}
+  <div class="related top">
     {{- rellink_markup () }}
     {{- breadcrumbs_markup() }}
   </div>
+  {%- endif %}
 {%- endmacro %}
 
 {%- macro relbar_bottom() %}
+  {%- if theme_showrelbarbottom|tobool %}
+  <div class="related bottom">
+    {{- rellink_markup () }}
+    {{- breadcrumbs_markup() }}
+  </div>
+  {%- endif %}
 {%- endmacro %}

@@ -50,7 +50,7 @@ h6 { font-size: 1rem; font-weight: normal; }
 
 header#pageheader, footer#pagefooter, div.related, div.document {
     width: 100%;
-    max-width: {{ theme_totalwidth }};
+    max-width: 50rem;
     margin: auto;
 }
 
@@ -67,18 +67,18 @@ div.bodywrapper {
     {%- endif %}
 }
 
-header#pageheader {
+footer#pagefooter, footer#pagefooter a {
+    color: {{ theme_footertextcolor }};
 }
+
 
 footer#pagefooter {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    color: {{ theme_footertextcolor }};
     text-align: center;
 }
 
 footer#pagefooter a {
-    color: {{ theme_footertextcolor }};
     text-decoration: underline;
 }
 
@@ -121,9 +121,16 @@ tt {
 
 div.related {
     line-height: 30px;
-    border-bottom: 1px solid #aaa;
     width: 100%;
     font-size: 0.9rem;
+}
+
+div.related.top {
+    border-bottom: 1px solid #aaa;
+}
+
+div.related.bottom {
+    border-top: 1px solid #aaa;
 }
 
 div.related ul {
