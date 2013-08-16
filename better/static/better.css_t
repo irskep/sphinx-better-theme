@@ -152,7 +152,7 @@ nav#rellinks li+li:before {
 }
 
 nav#breadcrumbs li+li:before {
-    content: "»";
+    content: "\00BB";
 }
 
 /* sidebar */
