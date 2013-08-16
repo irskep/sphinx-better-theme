@@ -8,7 +8,7 @@ here. `Open a Github issue`_ if something's missing.
 This document assumes you've already set up Sphinx and have some docs written.
 
 .. _using a theme: http://sphinx-doc.org/theming.html#using-a-theme
-.. _Open a Github issue: https://github.com/irskep/sphinx-better-theme/issues
+.. _Open a Github issue: https://github.com/irskep/sphinx-better-theme/issues/new
 
 Installation
 ------------
@@ -113,3 +113,37 @@ defaults::
     # value of textcolor
     'footertextcolor': '',
   }
+
+Adding static files
+^^^^^^^^^^^^^^^^^^^
+
+This is all in the Sphinx docs, but I'm not about to send you all around the
+internet just to find it.
+
+#. Configure a static directory::
+
+    html_static_path = ['_static']
+
+#. Put a file in it (e.g. :file:`docs/_static/cat.png`)
+
+#. Use it.
+
+Using CSS files
+^^^^^^^^^^^^^^^
+
+#. Add your CSS file as a static file as above.
+
+#. Add the file name (relative to the static directory) to the
+   ``html_theme_options['cssfiles']`` list.
+
+You should read `better's CSS files`_ to get an idea of what selectors you
+should override. :file:`better_basic.css_t` is my fork of the basic theme's
+CSS, and :file:`better.css_t` is the stylistic overrides.
+
+.. _better's CSS files: https://github.com/irskep/sphinx-better-theme/tree/master/better/static
+
+Using Javascript files
+^^^^^^^^^^^^^^^^^^^^^^
+
+Not currently supported. `Open a Github issue`_ and plead your case for why in
+the world you would want Javascript on your documentation.
