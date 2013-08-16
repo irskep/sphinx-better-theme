@@ -1,6 +1,10 @@
 A Better Sphinx Theme
 =====================
 
+[Documentation](https://sphinx-better-theme.readthedocs.org/en/latest/)
+
+[Demo](https://sphinx-better-theme.readthedocs.org/en/latest/demos.html)
+
 This is a modified version of the Sphinx default theme with the following
 goals:
 
