@@ -11,6 +11,7 @@ You can get the source and open issues `on Github.`_
 .. toctree::
     :maxdepth: 2
 
+    index.rst
     guide.rst
     demos.rst
 
@@ -158,3 +159,9 @@ Roadmap
 **v0.2:** Rewrite markup to be semantic and customizable
 
 **v1.0:** Extreme documentation polish and rounding out of edge cases
+
+Other themes to check out
+-------------------------
+
+`Cloud <http://pythonhosted.org/cloud_sptheme/cloud_theme.html>`_ is a nice,
+feature-rich theme from which I plan to steal more than one feature.

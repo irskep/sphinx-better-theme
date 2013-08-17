@@ -1,6 +1,8 @@
 User guide
 ==========
 
+For installation instructions, see :ref:`main_page_reference`.
+
 If you get stuck, you can look for information in Sphinx's documentation for
 `using a theme`_, but I've tried to collect all relevant information right
 here. `Open a Github issue`_ if something's missing.
@@ -9,14 +11,6 @@ This document assumes you've already set up Sphinx and have some docs written.
 
 .. _using a theme: http://sphinx-doc.org/theming.html#using-a-theme
 .. _Open a Github issue: https://github.com/irskep/sphinx-better-theme/issues/new
-
-Installation
-------------
-
-See :ref:`main_page_reference`.
-
-Customization
--------------
 
 sphinx-better-theme is meant to be customized primarily via CSS. There are a
 few options that you can set in :file:`conf.py`, but they are either
