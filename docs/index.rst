@@ -164,3 +164,6 @@ Other themes to check out
 
 `Cloud <http://pythonhosted.org/cloud_sptheme/cloud_theme.html>`_ is a nice,
 feature-rich theme from which I plan to steal more than one feature.
+
+A few different themes are available for download at
+`sphinx-themes. <http://vkvn.github.io/sphinx-themes/>`
