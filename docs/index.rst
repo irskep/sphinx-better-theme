@@ -11,7 +11,6 @@ You can get the source and open issues `on Github.`_
 .. toctree::
     :maxdepth: 2
 
-    index.rst
     guide.rst
     demos.rst
 
