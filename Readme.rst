@@ -67,21 +67,22 @@ improved.
 Method 2: Installing to site-packages
 """""""""""""""""""""""""""""""""""""
 
-If adding the theme to your source tree is impractical for some reason, or if
-you need to share it among several repositories, you can install it like a
-regular Python package.
+If adding the theme to your source tree is impractical, if you need to share it
+among several repositories, or if you prefer a more serene frequency of
+updates, you can install it like a regular Python package.
 
-1. `Download the zip file.`_
+`Download the zip file`_ and run the usual command::
+
+    > python setup.py install
 
 .. _Download the zip file.: https://github.com/irskep/sphinx-better-theme/archive/master.zip
 
-2. Run the usual command::
+Or install from PyPI::
 
-    > pip install sphinx-better-theme   # release version
-    > python setup.py install           # bleeding edge
+    > pip install sphinx-better-theme
 
-3. Set ``html_theme_path`` to contain ``better.better_theme_path``, and set
-   ``html_theme`` to ``'better'``::
+To use the theme set ``html_theme_path`` to contain
+``better.better_theme_path``, and set ``html_theme`` to ``'better'``::
 
     from better import better_theme_path
     html_theme_path = [better_theme_path]
