@@ -9,5 +9,5 @@ setup(
     url='http://github.com/irskep/sphinx-better-theme',
     license='LICENSE',
     description='A nice-looking, customizable Sphinx theme',
-    long_description=open('Readme.md').read(),
+    long_description=open('Readme.rst').read(),
 )
