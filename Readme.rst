@@ -55,14 +55,14 @@ improved.
 
 .. _download the zip file: https://github.com/irskep/sphinx-better-theme/archive/master.zip
 
-2. Add the parent folder of the theme to your :file:`conf.py`. If you use the
+2. Add the parent folder of the theme to your ``conf.py``. If you use the
    folder structure in the block above, you'd do it like this::
 
         html_theme_path = ['sphinx-better-theme']
 
    (because the theme path is ``sphinx-better-theme/better``.)
 
-3. Set ``html_theme`` to ``'better'`` in your :file:`conf.py`.
+3. Set ``html_theme`` to ``'better'`` in your ``conf.py``.
 
 Method 2: Installing to site-packages
 """""""""""""""""""""""""""""""""""""
