@@ -144,13 +144,10 @@ documentation. <http://docs.python.org/3.3/library/argparse.html>`_
 How does this theme encourage customization better than the default?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. There are more variables to customize.
-2. The markup and CSS are easier to understand.
-3. The basic look of the theme is subjectively better.
-4. It's easy to add CSS and Javascript files without creating a new theme.
-
-Additionally, a future version of this template will use more granular blocks
-for easier overriding of specific parts of the page.
+It's much easier to add your own CSS. The theme's CSS rules and markup are a
+little easier to understand, and that situation should improve over time.
+Additionally, there are more meaningful theme options for disabling
+unnecessary widgets.
 
 Why not just contribute to Sphinx itself?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
