@@ -65,7 +65,8 @@ regular Python package.
 
 2. Run the usual command::
 
-    > python setup.py install
+    > pip install sphinx-better-theme   # release version
+    > python setup.py install           # bleeding edge
 
 3. Set ``html_theme_path`` to contain ``better.better_theme_path``, and set
    ``html_theme`` to ``'better'``::

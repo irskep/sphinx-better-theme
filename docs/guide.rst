@@ -42,6 +42,7 @@ defaults::
     'inlinecss': '',
 
     # CSS files to include after all other CSS files
+    # (refer to by relative path from conf.py directory)
     'cssfiles': [],
 
     # show a big text header with the value of html_title
@@ -107,5 +108,7 @@ CSS, and :file:`better.css_t` is the stylistic overrides.
 Using Javascript files
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Not currently supported. `Open a Github issue`_ and plead your case for why in
-the world you would want Javascript on your documentation.
+#. Add your Javascript file as a static file as above.
+
+#. Add the file name (relative to the static directory) to the
+   ``html_theme_options['scriptfiles']`` list.

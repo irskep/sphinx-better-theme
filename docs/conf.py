@@ -18,7 +18,8 @@ html_theme = 'better'
 html_theme_options = {
     'inlinecss': """
     """,
-    'cssfiles': ['style.css'],
+    'cssfiles': ['_static/style.css'],
+    'scriptfiles': ['_static/testing.js'],
 }
 html_theme_path = ['..']
 html_title = "{} {}".format(project, release)
