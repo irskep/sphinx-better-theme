@@ -4,7 +4,7 @@ User guide
 For installation instructions, see :ref:`main_page_reference`.
 
 If you get stuck, you can look for information in Sphinx's documentation for
-`using a theme`_, but I've tried to collect all relevant information right
+`using a theme`_, but in theory all the relevant information is collected right
 here. `Open a Github issue`_ if something's missing.
 
 This document assumes you've already set up Sphinx and have some docs written.
@@ -21,8 +21,8 @@ markup. That situation should improve over time as sphinx-better-theme sheds
 more and more of its inheritance from the basic theme.
 
 Feel free to read `the conf.py for this site`_ to get ideas for your own site.
-In particular, I'd recommend setting ``html_short_title`` to ``"Home"`` so the
-first breadcrumb says "Home" instead of your long project title.
+In particular, consider setting ``html_short_title`` to ``"Home"`` so the first
+breadcrumb says "Home" instead of your long project title.
 
 .. _the conf.py for this site: https://raw.github.com/irskep/sphinx-better-theme/master/docs/conf.py
 

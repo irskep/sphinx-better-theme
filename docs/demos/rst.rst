@@ -1,8 +1,7 @@
 reStructuredText style demo
 ===========================
 
-This is a simple demo of only the features of regular reStructuredText that I
-felt compelled to test.
+This is a simple demo of a subset of reStructuredText features.
 
 Inline markup
 -------------

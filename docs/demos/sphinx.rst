@@ -31,10 +31,10 @@ seealso
 .. seealso::
 
     `mrjob <http://pythonhosted.org/mrjob>`_
-        Another open source project I contribute to
+        Another awesome open source project
 
     `Buildy <http://playbuildy.com>`_
-        The game I work on during the day
+        A cool online game
 
 rubric
 ^^^^^^
@@ -73,7 +73,7 @@ glossary
     term
         A string defined in the glossary.
 
-Here I reference the :term:`glossary` term.
+Here we reference the :term:`glossary` term.
 
 productionlist
 ^^^^^^^^^^^^^^

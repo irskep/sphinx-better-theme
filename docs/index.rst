@@ -79,6 +79,8 @@ To use the theme, set ``html_theme_path`` to contain
 Anticipatory FAQ
 ----------------
 
+This material will probably move to a blog post at some point.
+
 Better how?
 ^^^^^^^^^^^
 
@@ -142,6 +144,7 @@ How does this theme encourage customization better than the default?
 1. There are more variables to customize.
 2. The markup and CSS are easier to understand.
 3. The basic look of the theme is subjectively better.
+4. It's easy to add CSS and Javascript files without creating a new theme.
 
 Additionally, a future version of this template will use more granular blocks
 for easier overriding of specific parts of the page.
@@ -168,4 +171,4 @@ Other themes to check out
 feature-rich theme from which I plan to steal more than one feature.
 
 A few different themes are available for download at
-`sphinx-themes. <http://vkvn.github.io/sphinx-themes/>`
+`sphinx-themes. <http://vkvn.github.io/sphinx-themes/>`_

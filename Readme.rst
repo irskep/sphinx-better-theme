@@ -1,21 +1,18 @@
 A Better Sphinx Theme
 ---------------------
 
-Link to full docs
-^^^^^^^^^^^^^^^^^
+`Read the documentation`_
 
-`Documentation`_
+`See a demo`_
 
-`Demo`_
+.. _Read the documentation: https://sphinx-better-theme.readthedocs.org/en/latest/
 
-.. _Documentation: https://sphinx-better-theme.readthedocs.org/en/latest/
+.. _See a demo: https://sphinx-better-theme.readthedocs.org/en/latest/demos.html
 
-.. _Demo: https://sphinx-better-theme.readthedocs.org/en/latest/demos.html
+What is this?
+^^^^^^^^^^^^^
 
-What is this
-^^^^^^^^^^^^
-
-This is a modified version of the Sphinx default theme with the following
+This is a modified version of the default Sphinx theme with the following
 goals:
 
 1. Remove frivolous colors, especially hard-coded ones
@@ -23,8 +20,9 @@ goals:
 3. Encourage visual customization through CSS, not themeconf
 4. Use semantic markup
 
-So far, only goals 1 and 2 have been met. `Open a ticket` if you'd like
-something changed.
+v0.1 meets goals one and two. Goal three is partially complete; it's simple to
+add your own CSS file without creating a whole new theme. `Open a ticket` if
+you'd like something changed.
 
 .. _Open a ticket: https://github.com/irskep/sphinx-better-theme/issues/new
 
