@@ -6,6 +6,13 @@ setup(
     author='Steve Johnson',
     author_email='steve@steveasleep.com',
     packages=['better'],
+    package_data={
+        'better': [
+            '*.html',
+            '*.conf',
+            'static/*.css_t'
+        ]
+    },
     url='http://github.com/irskep/sphinx-better-theme',
     license='LICENSE',
     description='A nice-looking, customizable Sphinx theme',
