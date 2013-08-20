@@ -105,8 +105,11 @@ subjective improvements over the default theme and other built-in themes:
    <http://practicaltypography.com/typography-in-ten-minutes.html>`_ Some
    projects make use of the full width to display tables, but many projects do
    just fine without them.
-4. Better customization. The default theme hard-codes several color values that
-   would look terrible with different color settings.
+4. Better customization. The default theme teases you by putting some color
+   settings in the theme configuration, but a few key components like code
+   blocks aren't customizable at all. ``sphinx-better-theme`` makes it easy to
+   change settings with little overhead by letting you add your own CSS files
+   without all the trouble of making a new theme.
 
 A future version of this theme will have semantic markup.  The default theme
 is a sea of ``<div>`` tags. Even if the much-heralded machine-readable web
