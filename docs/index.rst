@@ -69,7 +69,7 @@ Or install from PyPI::
 
     > pip install sphinx-better-theme
 
-To use the theme set ``html_theme_path`` to contain
+To use the theme, set ``html_theme_path`` to contain
 ``better.better_theme_path``, and set ``html_theme`` to ``'better'``::
 
     from better import better_theme_path
