@@ -76,6 +76,10 @@ defaults::
     # color of text in the footer, including links; defaults to the
     # value of textcolor
     'footertextcolor': '',
+
+    # Google Analytics info
+    'ga_ua': '',
+    'ga_domain': '',
   }
 
 Adding static files

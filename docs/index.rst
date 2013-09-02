@@ -155,14 +155,16 @@ Why not just contribute to Sphinx itself?
 I'll probably make an attempt eventually. For now I'd just like to validate my
 ideas.
 
-Roadmap
--------
+History/Roadmap
+---------------
 
 **v0.1:** Basic CSS-customizable style that looks nice in its default state
 
-**v0.2:** Rewrite markup to be semantic and customizable
+**v0.11:** Add easy Google Analytics support
 
-**v1.0:** Extreme documentation polish and rounding out of edge cases
+**v0.2:** (planned) Rewrite markup to be semantic and customizable
+
+**v1.0:** (planned) Extreme documentation polish and rounding out of edge cases
 
 Other themes to check out
 -------------------------
