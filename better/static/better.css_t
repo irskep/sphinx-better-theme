@@ -99,10 +99,10 @@ a.headerlink {
 pre, tt {
     background-color: #eee;
     color: #333;
-    font-family: Monaco, Consolas, "Lucida Console", monospace;
 }
 
 pre {
+    font-family: Monaco, Consolas, "Lucida Console", monospace;
     margin-left: -5px;
     margin-right: -5px;
     padding: 5px;
@@ -114,7 +114,7 @@ pre {
 
 tt {
     padding: 0 1px 0 1px;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
 }
 
 /* relbar */
