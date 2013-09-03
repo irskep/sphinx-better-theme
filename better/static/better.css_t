@@ -270,3 +270,20 @@ div.viewcode-block:target {
     border-top: 1px solid #ac9;
     border-bottom: 1px solid #ac9;
 }
+
+/* responsive styles */
+
+@media (max-width: 50rem) {
+  /* don't float sidebar */
+  div.bodywrapper { margin: 0; }
+  div.sphinxsidebar {
+    float: none;
+    margin: 0;
+  }
+
+  /* margins on body */
+  header#pageheader, footer#pagefooter, div.related, div.document {
+    margin: 0 1rem;
+    width: calc(100% - 2rem);
+  }
+}
