@@ -50,7 +50,7 @@ h6 { font-size: 1rem; font-weight: normal; }
 
 header#pageheader, footer#pagefooter, div.related, div.document {
     width: 100%;
-    max-width: 50rem;
+    max-width: 60rem;
     margin: auto;
 }
 
