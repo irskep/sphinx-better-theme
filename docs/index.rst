@@ -76,6 +76,15 @@ To use the theme, set ``html_theme_path`` to contain
     html_theme_path = [better_theme_path]
     html_theme = 'better'
 
+Projects using sphinx-better-theme
+----------------------------------
+
+* `mrjob <http://mrjob.readthedocs.org/en/latest/>`_ (both narrative and API
+  docs)
+
+* `pivotal_tools <http://pythonhosted.org/pivotal_tools/>`_ (single-page
+  command line tool documentation)
+
 Anticipatory FAQ
 ----------------
 
