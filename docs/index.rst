@@ -76,6 +76,23 @@ To use the theme, set ``html_theme_path`` to contain
     html_theme_path = [better_theme_path]
     html_theme = 'better'
 
+Using with Read the Docs
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Using sphinx-better-theme with Read the Docs is easy. You just need to tell it
+to install the package.
+
+1. Create a :file:`requirements.txt` file just for your docs. It must contain
+   at least the line ``sphinx-better-theme==0.12``, as well as any other
+   dependencies your docs might have that are separate from your project's
+   dependencies. (I like to use :py:mod:`livereload`, for example.) I suggest
+   putting it in your docs folder, e.g. at :file:`docs/requirements.txt`.
+
+2. Make sure the :guilabel:`Use virtualenv` checkbox is enabled.
+
+3. Set the :guilabel:`Requirements file` field to the path to your
+   :file:`requirements.txt` file.
+
 Projects using sphinx-better-theme
 ----------------------------------
 
@@ -183,3 +200,6 @@ feature-rich theme from which I plan to steal more than one feature.
 
 A few different themes are available for download at
 `sphinx-themes. <http://vkvn.github.io/sphinx-themes/>`_
+
+`Read the Docs <https://readthedocs.org/>`_ uses a nice custom theme as the
+default for all docs hosted there.
