@@ -188,6 +188,9 @@ History/Roadmap
 
 **v0.11:** Add easy Google Analytics support
 
+**v0.12:** Improve base styles, responsive layout, document usage with Read the
+Docs
+
 **v0.2:** (planned) Rewrite markup to be semantic and customizable
 
 **v1.0:** (planned) Extreme documentation polish and rounding out of edge cases
