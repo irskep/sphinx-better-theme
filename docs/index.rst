@@ -2,8 +2,7 @@ sphinx-better-theme
 ===================
 
 **sphinx-better-theme** is a theme for Sphinx that tries to be better than the
-built-in themes. See the :doc:`Anticipatory FAQ <anticipatory-faq>` for
-details.
+built-in themes. See :doc:`anticipatory-faq` for details.
 
 You can get the source and open issues `on Github.`_
 
