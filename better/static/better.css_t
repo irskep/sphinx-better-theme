@@ -296,7 +296,7 @@ div.viewcode-block:target {
 
 /* responsive styles */
 
-@media (max-width: 50rem) {
+@media (max-width: 820px) {
   /* don't float sidebar */
   div.bodywrapper { margin: 0; }
   div.sphinxsidebar {
