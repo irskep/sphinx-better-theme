@@ -3,14 +3,22 @@
 {%- from "relbar.html" import relbar_bottom with context %}
 
 {%- block extrahead %}
+
+  {#- make mobile reasonable #}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   {%- for css_file in theme_cssfiles %}
     <link rel="stylesheet" href="{{ pathto(css_file, 1) }}" type="text/css" />
   {%- endfor %}
+
   {%- for js_file in theme_scriptfiles %}
     <script src="{{ pathto(js_file, 1) }}" type="text/javascript"></script>
   {%- endfor %}
+
   {%- if theme_inlinecss %}
-    <style type="text/css">{{ theme_inlinecss|safe }}</style>{%- endif %}
+    <style type="text/css">{{ theme_inlinecss|safe }}</style>
+  {%- endif %}
+
   {%- block userhead %}
   {%- endblock %}
 {%- endblock %}
