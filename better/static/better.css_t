@@ -116,6 +116,17 @@ tt {
     font-size: 1.2rem;
 }
 
+/* API doc styles */
+
+dl.function,
+dl.class,
+dl.method,
+dl.attribute,
+dl.data,
+dl.classmethod {
+    margin-bottom: 2rem;
+}
+
 /* relbar */
 
 div.related {
