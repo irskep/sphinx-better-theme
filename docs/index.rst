@@ -100,3 +100,8 @@ A few different themes are available for download at
 
 `Read the Docs <https://readthedocs.org/>`_ uses a nice custom theme as the
 default for all docs hosted there.
+
+The `Guzzle <http://guzzlephp.org/>`_ project uses a `heavily customized
+theme`_ that's also used by `aws-cli <http://aws.amazon.com/cli/>`_.
+
+.. _heavily customized theme: https://github.com/guzzle/guzzle_sphinx_theme
