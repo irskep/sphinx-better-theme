@@ -2,7 +2,8 @@ sphinx-better-theme
 ===================
 
 **sphinx-better-theme** is a theme for Sphinx that tries to be better than the
-built-in themes. See the `Anticipatory FAQ`_ for details.
+built-in themes. See the :doc:`Anticipatory FAQ <anticipatory-faq>` for
+details.
 
 You can get the source and open issues `on Github.`_
 
@@ -13,6 +14,7 @@ You can get the source and open issues `on Github.`_
 
     guide.rst
     demos.rst
+    anticipatory-faq.rst
 
 Compatibility
 -------------
@@ -21,77 +23,49 @@ sphinx-better-theme is compatible with Sphinx 0.6.4+ and Jinja 2.3.1+. Older
 versions may work but have not been tested.
 
 .. _main_page_reference:
+.. _installation:
 
 Installation
 ------------
 
-Method 1: Adding to your source tree
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-This method is preferred due to the frequency with which sphinx-better-theme is
-improved.
-
-1. Put the theme in your source tree. If you use git, you can add
-   ``sphinx-better-theme``'s repository as a submodule. Otherwise you can
-   `download the zip file`_ and expand it somewhere predictable. Here's an
-   example using git::
-
-        > git submodule add \
-            https://github.com/irskep/sphinx-better-theme.git \
-            docs/sphinx-better-theme
-        > git submodule update --init
-
-.. _download the zip file: https://github.com/irskep/sphinx-better-theme/archive/master.zip
-
-2. Add the parent folder of the theme to your :file:`conf.py`. If you use the
-   folder structure in the block above, you'd do it like this::
-
-        html_theme_path = ['sphinx-better-theme']
-
-   (because the theme path is ``sphinx-better-theme/better``.)
-
-3. Set ``html_theme`` to ``'better'`` in your :file:`conf.py`.
-
-Method 2: Installing to site-packages
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-If adding the theme to your source tree is impractical, if you need to share it
-among several repositories, or if you prefer a more serene frequency of
-updates, you can install it like a regular Python package.
-
-`Download the zip file`_ and run the usual command::
-
-    > python setup.py install
-
-.. _Download the zip file.: https://github.com/irskep/sphinx-better-theme/archive/master.zip
-
-Or install from PyPI::
+Get it from PyPI::
 
     > pip install sphinx-better-theme
 
-To use the theme, set ``html_theme_path`` to contain
-``better.better_theme_path``, and set ``html_theme`` to ``'better'``::
+Or `download the zip file`_ and run the usual command::
+
+    > python setup.py install
+
+.. _download the zip file: https://github.com/irskep/sphinx-better-theme/archive/master.zip
+
+Once the package is installed, make these changes to :file:`conf.py` to direct
+Sphinx to use the theme::
 
     from better import better_theme_path
     html_theme_path = [better_theme_path]
     html_theme = 'better'
 
-Using with Read the Docs
-^^^^^^^^^^^^^^^^^^^^^^^^
+Read the Docs Configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Using sphinx-better-theme with Read the Docs is easy. You just need to tell it
-to install the package.
+Using sphinx-better-theme with `Read the Docs`_ is easy. You just need to tell
+it to install the package.
 
-1. Create a :file:`requirements.txt` file just for your docs. It must contain
-   at least the line ``sphinx-better-theme==0.12``, as well as any other
-   dependencies your docs might have that are separate from your project's
-   dependencies. (I like to use :py:mod:`livereload`, for example.) I suggest
-   putting it in your docs folder, e.g. at :file:`docs/requirements.txt`.
+.. _Read the Docs: https://readthedocs.org/
 
-2. Make sure the :guilabel:`Use virtualenv` checkbox is enabled.
+First, create a :file:`requirements.txt` file just for your docs. It must
+contain at least the line ``sphinx-better-theme==0.12``, as well as any other
+dependencies your docs might have that are separate from your project's
+dependencies. I suggest putting it in your docs folder, e.g. at
+:file:`docs/requirements.txt`.
 
-3. Set the :guilabel:`Requirements file` field to the path to your
-   :file:`requirements.txt` file.
+Then, go to your Read the Docs admin panel. Make sure the :guilabel:`Use
+virtualenv` checkbox is enabled, and set the :guilabel:`Requirements file`
+field to the path to your :file:`requirements.txt` file.
+
+Read the Docs should now build and display your theme correctly, assuming your
+:file:`conf.py` contains the changes described above in
+:ref:`Installation <installation>`.
 
 Projects using sphinx-better-theme
 ----------------------------------
@@ -101,85 +75,6 @@ Projects using sphinx-better-theme
 
 * `pivotal_tools <http://pythonhosted.org/pivotal_tools/>`_ (single-page
   command line tool documentation)
-
-Anticipatory FAQ
-----------------
-
-This material will probably move to a blog post at some point.
-
-Better how?
-^^^^^^^^^^^
-
-The default Sphinx theme isn't bad, and the Python 3 theme is even better. But
-both themes are problematic for many projects. Specifically, they are difficult
-to customize beyond a few inconsequential color and layout settings. Their
-markup and stylesheets do not lend themselves to tweaking. This project aims to
-mitigate those problems.
-
-Additionally, ``better-sphinx-theme`` contains a few differences that offer
-subjective improvements over the default theme and other built-in themes:
-
-1. Less unnecessary color and fewer different colors. I'm not opposed to the
-   use of color on the web. I just think it's more professional to use a
-   consistent color palette. This site doesn't use much color, but
-   ``better-sphinx-theme`` ought to support color if you want it.
-2. Fewer fonts and smaller variations in font styles. Headings don't need to be
-   huge to be readable, and the sidebar doesn't always need its own set of
-   styles.
-3. Forced use of the full page width. `45-90 characters is generally agreed to
-   be the most readable line length.
-   <http://practicaltypography.com/typography-in-ten-minutes.html>`_ Some
-   projects make use of the full width to display tables, but many projects do
-   just fine without them.
-4. Better customization. The default theme teases you by putting some color
-   settings in the theme configuration, but a few key components like code
-   blocks aren't customizable at all. ``sphinx-better-theme`` makes it easy to
-   change settings with little overhead by letting you add your own CSS files
-   without all the trouble of making a new theme.
-
-A future version of this theme will have semantic markup.  The default theme
-is a sea of ``<div>`` tags. Even if the much-heralded machine-readable web
-never pans out, it strikes me as a nice symmetry to have a program's
-documentation be easily consumable by other programs. It can also make CSS
-rules clearer.
-
-Why encourage customization?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Branding is important for even small projects. Take a quick look at `the
-built-in Sphinx themes. <http://sphinx-doc.org/theming.html#builtin-themes>`_
-They're all pretty distinctive, and several are for specific projects or are
-based on themes created for specific projects.
-
-As a maintainer, I don't want my project's documentation to use exactly the
-same theme as someone else's. The layout and conventions should be consistent
-with other projects in the same environment (in my case, other Python
-projects), but it should still be possible to glance at a page and know that
-you're looking at Project X, rather than "a project styled using the default
-Sphinx template."
-
-A logo helps, but most projects' tiny teams don't have the skills necessary to
-create an effective logo. Besides, fonts and colors can have an even stronger
-effect on the branding of a site. Just look at `Django's documentation
-<https://docs.djangoproject.com/en/1.5/>`_ (which, by the way, uses a custom
-Sphinx theme). You can tell at a glance what project's web site you're on. The
-same goes for the difference betwen `Python 2's documentation
-<http://docs.python.org/2/library/argparse.html>`_ and `Python 3's
-documentation. <http://docs.python.org/3.3/library/argparse.html>`_
-
-How does this theme encourage customization better than the default?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-It's much easier to add your own CSS. The theme's CSS rules and markup are a
-little easier to understand, and that situation should improve over time.
-Additionally, there are more meaningful theme options for disabling
-unnecessary widgets.
-
-Why not just contribute to Sphinx itself?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-I'll probably make an attempt eventually. For now I'd just like to validate my
-ideas.
 
 History/Roadmap
 ---------------
