@@ -85,6 +85,9 @@ History/Roadmap
 **v0.12:** Improve base styles, responsive layout, document usage with Read the
 Docs
 
+**v0.13:** Further style improvements, relbar shows only full titles of
+next/previous links
+
 **v0.2:** (planned) Rewrite markup to be semantic and customizable
 
 **v1.0:** (planned) Extreme documentation polish and rounding out of edge cases
