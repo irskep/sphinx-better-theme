@@ -11,7 +11,7 @@ body {
     color: {{ theme_textcolor }};
     margin: 0;
     padding: 0;
-    line-height: 130%;
+    line-height: 135%;
 }
 
 a {
@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
     color: {{ theme_headtextcolor }};
-    line-height: 130%;
+    line-height: 135%;
 }
 
 h1 { font-size: 1.5rem; font-weight: bold; }
