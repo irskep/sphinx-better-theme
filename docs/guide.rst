@@ -98,14 +98,17 @@ Adding static files
 Using CSS files
 ^^^^^^^^^^^^^^^
 
-#. Add your CSS file as a static file as above.
+#. Add your CSS file as a static file as above (like
+   :file:`docs/_static/style.css`).
 
-#. Add the file name (relative to the static directory) to the
-   ``html_theme_options['cssfiles']`` list.
+#. Add the file name to the ``html_theme_options['cssfiles']`` list in
+   :file:`conf.py` (like
+   ``html_theme_options['cssfiles'] = ['_static/style.css']``)
 
-You should read `better's CSS files`_ to get an idea of what selectors you
-should override. :file:`better_basic.css_t` is my fork of the basic theme's
-CSS, and :file:`better.css_t` is the stylistic overrides.
+You should read `better's CSS files`_ or poke around with your browser's
+element inspector to get an idea of what selectors you should override.
+:file:`better_basic.css_t` is my fork of the basic theme's CSS, and
+:file:`better.css_t` is the stylistic overrides.
 
 .. _better's CSS files: https://github.com/irskep/sphinx-better-theme/tree/master/better/static
 
