@@ -206,7 +206,7 @@ div.sphinxsidebar p.topless {
 div.sphinxsidebar ul {
     margin: 0;
     padding: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     list-style: none;
 }
 
@@ -228,10 +228,6 @@ div.sphinxsidebar input {
     height: 1.5rem;
     font-size: 1rem;
     margin: 0;
-}
-
-div.sourcelink {
-    margin-top: 2rem;
 }
 
 /* paragraph-level markup */

@@ -1,7 +1,7 @@
 User guide
 ==========
 
-For installation instructions, see :ref:`main_page_reference`.
+For installation instructions, see :doc:`installation`.
 
 If you get stuck, you can look for information in Sphinx's documentation for
 `using a theme`_, but in theory all the relevant information is collected right
