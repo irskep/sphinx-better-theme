@@ -61,18 +61,18 @@ h6 { font-size: 1rem; font-weight: normal; }
 
 /* page-level layout of containers */
 
-header#pageheader, footer#pagefooter, div.related, div.document {
+header#pageheader, footer#pagefooter, .related, .document {
     width: 100%;
     max-width: 60rem;
     margin: auto;
 }
 
-div.documentwrapper {
+.documentwrapper {
     float: left;
     width: 100%;
 }
 
-div.bodywrapper {
+.bodywrapper {
     {% if theme_rightsidebar|tobool -%}
     margin: 0 {{ theme_sidebarwidth }} 0 0;
     {%- else -%}
@@ -142,27 +142,27 @@ dl.classmethod {
 
 /* relbar */
 
-div.related {
+.related {
     line-height: 30px;
     width: 100%;
     font-size: 0.9rem;
 }
 
-div.related.top {
+.related.top {
     border-bottom: 1px solid #aaa;
 }
 
-div.related.bottom {
+.related.bottom {
     border-top: 1px solid #aaa;
 }
 
-div.related ul {
+.related ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-div.related li {
+.related li {
     display: inline;
 }
 
@@ -180,11 +180,11 @@ nav#breadcrumbs li+li:before {
 
 /* sidebar */
 
-div.sphinxsidebarwrapper {
+.sphinxsidebarwrapper {
     padding: 0 1rem 0 0;
 }
 
-div.sphinxsidebar {
+.sphinxsidebar {
     width: {{ theme_sidebarwidth }};
     margin-left: -100%;
     font-size: 0.9rem;
@@ -195,33 +195,33 @@ div.sphinxsidebar {
     {%- endif %}
 }
 
-div.sphinxsidebar h3 a {
+.sphinxsidebar h3 a {
     color: {{ theme_headtextcolor }};
 }
 
-div.sphinxsidebar p.topless {
+.sphinxsidebar p.topless {
     margin: 5px 10px 10px 10px;
 }
 
-div.sphinxsidebar ul {
+.sphinxsidebar ul {
     margin: 0;
     padding: 0;
     margin-bottom: 1rem;
     list-style: none;
 }
 
-div.sphinxsidebar ul ul,
-div.sphinxsidebar ul.want-points {
+.sphinxsidebar ul ul,
+.sphinxsidebar ul.want-points {
     margin-left: 20px;
     list-style: square;
 }
 
-div.sphinxsidebar ul ul {
+.sphinxsidebar ul ul {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-div.sphinxsidebar input {
+.sphinxsidebar input {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -232,19 +232,19 @@ div.sphinxsidebar input {
 
 /* paragraph-level markup */
 
-div.admonition p.admonition-title + p {
+.admonition p.admonition-title + p {
     display: inline;
 }
 
-div.admonition p {
+.admonition p {
     margin-bottom: 5px;
 }
 
-div.admonition pre {
+.admonition pre {
     margin-bottom: 5px;
 }
 
-div.admonition ul, div.admonition ol {
+.admonition ul, .admonition ol {
     margin-bottom: 5px;
 }
 
@@ -257,21 +257,21 @@ p.admonition-title:after {
     content: ":";
 }
 
-div.note {
+.note {
     background-color: #eee;
     border: 1px solid #ccc;
 }
 
-div.seealso {
+.seealso {
     background-color: #ffc;
     border: 1px solid #ff6;
 }
 
-div.topic {
+.topic {
     background-color: #eee;
 }
 
-div.warning {
+.warning {
     background-color: #ffe4e4;
     border: 1px solid #f66;
 }
@@ -284,7 +284,7 @@ div.warning {
     background: #d6d6d6;
 }
 
-div.viewcode-block:target {
+.viewcode-block:target {
     background-color: #f4debf;
     border-top: 1px solid #ac9;
     border-bottom: 1px solid #ac9;
@@ -294,11 +294,11 @@ div.viewcode-block:target {
 
 @media (max-width: 820px) {
     /* kill the sidebar */
-    div.bodywrapper { margin: 0; }
-    div.sphinxsidebar {
+    .bodywrapper { margin: 0; }
+    .sphinxsidebar {
         display: none;
     }
-    header#pageheader, footer#pagefooter, div.related, div.document {
+    header#pageheader, footer#pagefooter, .related, .document {
         margin: 0 1rem;
         width: calc(100% - 2rem);
         width: -webkit-calc(100% - 2rem);
