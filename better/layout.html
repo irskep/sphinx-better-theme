@@ -2,6 +2,8 @@
 {%- from "relbar.html" import relbar_top with context %}
 {%- from "relbar.html" import relbar_bottom with context %}
 
+{#- ### head ### -#}
+
 {%- block extrahead %}
 
   {#- make mobile reasonable #}
@@ -23,6 +25,8 @@
   {%- endblock %}
 {%- endblock %}
 
+{#- ### sidebar ### -#}
+
 {%- block sidebarsearch %}
   {%- if theme_enablesidebarsearch|tobool %}{{ super() }}{%- endif %}
 {% endblock %}
@@ -30,6 +34,12 @@
 {%- block sidebarsourcelink %}
 {%- include "sourcelink.html" %}
 {%- endblock %}
+
+{%- block sidebarrel %}
+{#- kill it! #}
+{%- endblock %}
+
+{#- ### content ### -#}
 
 {%- block header %}
   {%- if theme_showheader|tobool %}
