@@ -226,8 +226,23 @@ nav#breadcrumbs li+li:before {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     height: 1.5rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin: 0;
+}
+
+.sphinxsidebar .search {
+    margin-top: 1rem;
+}
+
+.sphinxsidebar .search input[type=text] {
+    width: calc({{ theme_sidebarwidth }} - 6rem);
+    width: -webkit-calc({{ theme_sidebarwidth }} - 6rem);
+    display: inline-block;
+}
+
+.sphinxsidebar .search input[type=submit] {
+    width: 4rem;
+    display: inline-block;
 }
 
 /* paragraph-level markup */

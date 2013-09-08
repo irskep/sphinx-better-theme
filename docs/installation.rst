@@ -37,5 +37,4 @@ virtualenv` checkbox is enabled, and set the :guilabel:`Requirements file`
 field to the path to your :file:`requirements.txt` file.
 
 Read the Docs should now build and display your theme correctly, assuming your
-:file:`conf.py` contains the changes described above in
-:ref:`Installation <installation>`.
+:file:`conf.py` contains the changes described above.
