@@ -20,6 +20,7 @@ html_theme_options = {
     """,
     'cssfiles': ['_static/style.css'],
     'scriptfiles': ['_static/testing.js'],
+    'html_show_sourcelink': False,
 }
 html_theme_path = ['..']
 html_title = "{} {}".format(project, release)

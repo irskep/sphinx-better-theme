@@ -58,6 +58,10 @@ defaults::
     # garbage and just want it to go away.
     'enablesidebarsearch': True,
 
+    # this option was removed in Sphinx 1.2 but I like being able to set it
+    # to False and remove more clutter
+    'html_show_sourcelink': False,
+
     # show the self-serving link in the footer
     'linktotheme': True,
 
