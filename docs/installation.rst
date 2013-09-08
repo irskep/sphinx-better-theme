@@ -27,7 +27,7 @@ it to install the package.
 .. _Read the Docs: https://readthedocs.org/
 
 First, create a :file:`requirements.txt` file just for your docs. It must
-contain at least the line ``sphinx-better-theme==0.13``, as well as any other
+contain at least the line ``sphinx-better-theme==0.1.4``, as well as any other
 dependencies your docs might have that are separate from your project's
 dependencies. I suggest putting it in your docs folder, e.g. at
 :file:`docs/requirements.txt`.

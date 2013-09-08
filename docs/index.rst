@@ -44,6 +44,9 @@ Docs
 **v0.13:** Further style improvements, relbar shows only full titles of
 next/previous links
 
+**v0.1.4:** Semantic versioning, mobile bug fixes, sidebar slimming, style
+improvements
+
 **v0.2:** (planned) Rewrite markup to be semantic and customizable
 
 **v1.0:** (planned) Extreme documentation polish and rounding out of edge cases

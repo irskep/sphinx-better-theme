@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='sphinx-better-theme',
-    version='0.13',
+    version='0.1.4',
     author='Steve Johnson',
     author_email='steve@steveasleep.com',
     packages=['better'],
