@@ -228,15 +228,20 @@ nav#breadcrumbs li+li:before {
     height: 1.5rem;
     font-size: 0.9rem;
     margin: 0;
+
+    background-color: white;
+    border: 1px solid #ccc;
+    color: #555;
 }
 
 .sphinxsidebar .search {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .sphinxsidebar .search input[type=text] {
-    width: calc({{ theme_sidebarwidth }} - 6rem);
-    width: -webkit-calc({{ theme_sidebarwidth }} - 6rem);
+    {#- width: calc({{ theme_sidebarwidth }} - 5rem); #}
+    {#- width: -webkit-calc({{ theme_sidebarwidth }} - 5rem); #}
+    width: 90%;
     display: inline-block;
 }
 
