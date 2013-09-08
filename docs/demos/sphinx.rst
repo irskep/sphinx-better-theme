@@ -203,7 +203,7 @@ Python
 
 :py:mod:`py_module`
 
-.. py:function:: py_func(arg)
+.. py:function:: py_func(arg, a_long_argument=with_a_default, foo=bar, baz=qux, more=more, args=args, for=for, wrapping=wrapping)
 
     A Python function definition.
 

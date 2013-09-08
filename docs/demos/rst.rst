@@ -141,4 +141,6 @@ Admonition blocks
 
 .. warning:: warning block
 
-.. admonition:: admonition block
+.. admonition:: custom admonition
+
+  with content

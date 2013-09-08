@@ -8,9 +8,9 @@ master_doc = 'index'
 project = u'sphinx-better-theme'
 copyright = u'2013 Steve Johnson'
 # The short X.Y version.
-version = '0.12'
+version = '0.13'
 # The full version, including alpha/beta/rc tags.
-release = '0.12'
+release = '0.13'
 exclude_patterns = ['_build']
 pygments_style = 'sphinx'
 

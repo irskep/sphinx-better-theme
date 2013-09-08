@@ -11,7 +11,7 @@ body {
     color: {{ theme_textcolor }};
     margin: 0;
     padding: 0;
-    line-height: 130%;
+    line-height: 135%;
 }
 
 a {
@@ -32,11 +32,24 @@ a.toc-backref {
     color: {{ theme_headtextcolor }};
 }
 
+p {
+    margin: 1rem 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
     color: {{ theme_headtextcolor }};
-    line-height: 130%;
+    line-height: 135%;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+    margin-top: 1rem;
 }
 
 h1 { font-size: 1.5rem; font-weight: bold; }
@@ -103,8 +116,7 @@ pre, tt {
 
 pre {
     font-family: Monaco, Consolas, "Lucida Console", monospace;
-    margin-left: -5px;
-    margin-right: -5px;
+    margin: 1rem -5px;
     padding: 5px;
     border-left: none;
     border-right: none;
@@ -115,6 +127,17 @@ pre {
 tt {
     padding: 0 1px 0 1px;
     font-size: 1.2rem;
+}
+
+/* API doc styles */
+
+dl.function,
+dl.class,
+dl.method,
+dl.attribute,
+dl.data,
+dl.classmethod {
+    margin-bottom: 2rem;
 }
 
 /* relbar */
@@ -273,7 +296,7 @@ div.viewcode-block:target {
 
 /* responsive styles */
 
-@media (max-width: 50rem) {
+@media (max-width: 820px) {
   /* don't float sidebar */
   div.bodywrapper { margin: 0; }
   div.sphinxsidebar {
