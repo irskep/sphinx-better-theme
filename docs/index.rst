@@ -108,6 +108,11 @@ interesting custom theme.
 
 .. smiley (https://smiley.readthedocs.org/en/latest/)
 
+.. sphinxcontrib-epydoc (http://sphinxcontrib-epydoc.readthedocs.org/en/0.6/)
+.. sphinxcontrib-issuetracker (http://sphinxcontrib-issuetracker.readthedocs.org/en/0.11/)
+.. sphinxcontrib-napoleon (https://sphinxcontrib-napoleon.readthedocs.org/en/latest/)
+.. sphinxcontrib-programoutput (https://sphinxcontrib-programoutput.readthedocs.org/en/latest/)
+.. sphinx-me (https://sphinx-me.readthedocs.org/en/latest/)
 .. sphinxcontrib-sqltable (http://sphinxcontrib-sqltable.readthedocs.org/en/latest/)
 .. sphinxcontrib-spelling (http://sphinxcontrib-spelling.readthedocs.org/en/latest/)
 .. sphinxcontrib-fulltoc (http://sphinxcontrib-fulltoc.readthedocs.org/en/latest/)
