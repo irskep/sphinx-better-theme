@@ -54,6 +54,9 @@ improvements
 Other themes to check out
 -------------------------
 
+`kr-sphinx-themes <https://github.com/kennethreitz/kr-sphinx-themes>`_ has two
+nice, clean themes used for many popular (and nice-looking) projects.
+
 `Cloud <http://pythonhosted.org/cloud_sptheme/cloud_theme.html>`_ is a nice,
 feature-rich theme from which I plan to steal more than one feature.
 
@@ -70,3 +73,7 @@ theme`_ that's also used by `aws-cli <http://aws.amazon.com/cli/>`_.
 
 The `Julia language <https://github.com/JuliaLang/juliadoc>`_ also uses an
 interesting custom theme.
+
+.. possible projects to convince to switch:
+
+.. pip (http://pip.readthedocs.org/en/latest/)
