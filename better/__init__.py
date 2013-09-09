@@ -1,2 +1,3 @@
 import os
-better_theme_path = os.path.split(os.path.split(__file__)[0])[0]
+better_theme_path = os.path.split(os.path.dirname(__file__))[0]
+__version__ = '0.1.5-dev'

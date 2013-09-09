@@ -1,4 +1,10 @@
 # -*- coding: utf-8 -*-
+import os
+import sys
+
+sys.path.append(os.path.abspath('../'))
+
+import better
 
 extensions = ['sphinx.ext.intersphinx']
 templates_path = []
@@ -8,9 +14,9 @@ master_doc = 'index'
 project = u'sphinx-better-theme'
 copyright = u'2013 Steve Johnson'
 # The short X.Y version.
-version = '0.1.4'
+version = better.__version__.split("-")[0]
 # The full version, including alpha/beta/rc tags.
-release = '0.1.4'
+release = better.__version__
 exclude_patterns = ['_build']
 pygments_style = 'sphinx'
 
@@ -21,7 +27,7 @@ html_theme_options = {
     'cssfiles': ['_static/style.css'],
     'scriptfiles': ['_static/testing.js'],
 }
-html_theme_path = ['..']
+html_theme_path = [better.better_theme_path]
 html_title = "{} {}".format(project, release)
 html_short_title = "Home"
 html_sidebars = {

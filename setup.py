@@ -1,8 +1,9 @@
 from distutils.core import setup
+import better
 
 setup(
     name='sphinx-better-theme',
-    version='0.1.4',
+    version=better.__version__,
     author='Steve Johnson',
     author_email='steve@steveasleep.com',
     packages=['better'],
