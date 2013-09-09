@@ -56,7 +56,7 @@ Other themes to check out
 -------------------------
 
 `kr-sphinx-themes <https://github.com/kennethreitz/kr-sphinx-themes>`_ has two
-nice, clean themes used for many popular (and good) projects.
+nice, clean themes used for many popular (and good-looking) projects.
 
 `sphinx-readable-theme
 <https://sphinx-readable-theme.readthedocs.org/en/latest/>`_ is a theme
