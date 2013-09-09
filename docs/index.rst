@@ -75,9 +75,30 @@ The `Julia language <https://github.com/JuliaLang/juliadoc>`_ also uses an
 interesting custom theme.
 
 .. possible projects to convince to switch:
-
-.. pip (http://pip.readthedocs.org/en/latest/)
+.. (Steve's to-do list for "write other projects' docs for them")
 
 .. pillow (https://github.com/python-imaging/Pillow)
 ..  see https://github.com/python-imaging/Pillow/issues/282
 ..  and https://github.com/python-imaging/Pillow/issues/316
+
+.. pymongo (http://api.mongodb.org/python/current/)
+
+.. pyzmq (http://zeromq.github.io/pyzmq/)
+
+.. rsa (http://stuvel.eu/files/python-rsa-doc/index.html)
+
+.. scss (http://pythonhosted.org/scss/)
+
+.. boto (http://docs.pythonboto.org/en/latest/)
+
+.. pip (http://pip.readthedocs.org/en/latest/)
+
+.. runsnakerun (https://launchpad.net/runsnakerun)
+
+.. ply (https://github.com/dabeaz/ply)
+
+.. smiley (https://smiley.readthedocs.org/en/latest/)
+
+.. sphinxcontrib-sqltable (http://sphinxcontrib-sqltable.readthedocs.org/en/latest/)
+.. sphinxcontrib-spelling (http://sphinxcontrib-spelling.readthedocs.org/en/latest/)
+.. sphinxcontrib-fulltoc (http://sphinxcontrib-fulltoc.readthedocs.org/en/latest/)
