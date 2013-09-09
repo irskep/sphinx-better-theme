@@ -77,3 +77,7 @@ interesting custom theme.
 .. possible projects to convince to switch:
 
 .. pip (http://pip.readthedocs.org/en/latest/)
+
+.. pillow (https://github.com/python-imaging/Pillow)
+..  see https://github.com/python-imaging/Pillow/issues/282
+..  and https://github.com/python-imaging/Pillow/issues/316
