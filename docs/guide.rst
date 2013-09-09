@@ -42,7 +42,8 @@ defaults::
     'inlinecss': '',
 
     # CSS files to include after all other CSS files
-    # (refer to by relative path from conf.py directory)
+    # (refer to by relative path from conf.py directory, or link to a
+    # remote file)
     'cssfiles': [],
 
     # show a big text header with the value of html_title

@@ -10,7 +10,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   {%- for css_file in theme_cssfiles %}
-    <link rel="stylesheet" href="{{ pathto(css_file, 1) }}" type="text/css" />
+    {%- if css_file.startswith('http') %}
+      <link rel="stylesheet" href="{{ css_file }}" type="text/css" />
+    {%- else %}
+      <link rel="stylesheet" href="{{ pathto(css_file, 1) }}" type="text/css" />
+    {%- endif %}
   {%- endfor %}
 
   {%- for js_file in theme_scriptfiles %}
