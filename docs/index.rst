@@ -67,3 +67,6 @@ The `Guzzle <http://guzzlephp.org/>`_ project uses a `heavily customized
 theme`_ that's also used by `aws-cli <http://aws.amazon.com/cli/>`_.
 
 .. _heavily customized theme: https://github.com/guzzle/guzzle_sphinx_theme
+
+The `Julia language <https://github.com/JuliaLang/juliadoc>`_ also uses an
+interesting custom theme.
