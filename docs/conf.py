@@ -24,6 +24,10 @@ html_theme_options = {
 html_theme_path = ['..']
 html_title = "{} {}".format(project, release)
 html_short_title = "Home"
+html_sidebars = {
+    '**': ['globaltoc.html'],
+    'index': ['globaltoc.html'],
+}
 
 html_logo = None
 html_favicon = None
