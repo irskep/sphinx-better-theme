@@ -54,14 +54,6 @@ defaults::
     # same for bottom of the page
     'showrelbarbottom': True,
 
-    # show search in the sidebar. some of us think Sphinx's search is
-    # garbage and just want it to go away.
-    'enablesidebarsearch': True,
-
-    # this option was removed in Sphinx 1.2 but I like being able to set it
-    # to False and remove more clutter
-    'html_show_sourcelink': False,
-
     # show the self-serving link in the footer
     'linktotheme': True,
 
