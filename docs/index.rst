@@ -56,7 +56,7 @@ Other themes to check out
 -------------------------
 
 `kr-sphinx-themes <https://github.com/kennethreitz/kr-sphinx-themes>`_ has two
-nice, clean themes used for many popular (and nice-looking) projects.
+nice, clean themes used for many popular (and good) projects.
 
 `sphinx-readable-theme
 <https://sphinx-readable-theme.readthedocs.org/en/latest/>`_ is a theme
@@ -64,16 +64,16 @@ optimized for readability of *apidoc*-generated docs.
 
 `sphinxtheme-readability
 <https://sphinxtheme-readability.readthedocs.org/en/latest/>`_ is another
-attempt at a nice-looking theme.
+attempt at a clean theme.
 
-`Cloud <http://pythonhosted.org/cloud_sptheme/cloud_theme.html>`_ is a nice,
-feature-rich theme from which I plan to steal more than one feature.
+`Cloud <http://pythonhosted.org/cloud_sptheme/cloud_theme.html>`_ is a 
+feature-rich theme with a responsive layout.
 
 A few different themes are available for download at
 `sphinx-themes. <http://vkvn.github.io/sphinx-themes/>`_
 
-`Read the Docs <https://readthedocs.org/>`_ uses a nice custom theme as the
-default for all docs hosted there.
+`Read the Docs <https://readthedocs.org/>`_ uses a custom theme as the default
+for all docs hosted there.
 
 The `Guzzle <http://guzzlephp.org/>`_ project uses a `heavily customized
 theme`_ that's also used by `aws-cli <http://aws.amazon.com/cli/>`_.
