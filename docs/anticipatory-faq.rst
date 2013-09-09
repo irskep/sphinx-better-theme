@@ -3,6 +3,11 @@ Anticipatory FAQ
 
 This material will probably move to a blog post at some point.
 
+What's the two-second pitch?
+----------------------------
+
+It looks nice, it's easy to style with CSS, and it organizes the layout better.
+
 Better how?
 -----------
 

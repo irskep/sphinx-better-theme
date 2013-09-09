@@ -1,11 +1,12 @@
 sphinx-better-theme
 ===================
 
-**sphinx-better-theme** is a theme for Sphinx that tries to be better than the
-built-in themes. See :doc:`anticipatory-faq` for details.
+**sphinx-better-theme** is a theme for `Sphinx`_ that looks nice and is easy to
+style with CSS. See :doc:`anticipatory-faq` for details.
 
 You can get the source and open issues `on Github.`_
 
+.. _Sphinx: http://sphinx-doc.org
 .. _on Github.: https://github.com/irskep/sphinx-better-theme
 
 .. toctree::
@@ -56,6 +57,14 @@ Other themes to check out
 
 `kr-sphinx-themes <https://github.com/kennethreitz/kr-sphinx-themes>`_ has two
 nice, clean themes used for many popular (and nice-looking) projects.
+
+`sphinx-readable-theme
+<https://sphinx-readable-theme.readthedocs.org/en/latest/>`_ is a theme
+optimized for readability of *apidoc*-generated docs.
+
+`sphinxtheme-readability
+<https://sphinxtheme-readability.readthedocs.org/en/latest/>`_ is another
+attempt at a nice-looking theme.
 
 `Cloud <http://pythonhosted.org/cloud_sptheme/cloud_theme.html>`_ is a nice,
 feature-rich theme from which I plan to steal more than one feature.
