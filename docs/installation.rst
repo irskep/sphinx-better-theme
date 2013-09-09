@@ -29,7 +29,7 @@ it to install the package.
 First, create a :file:`requirements.txt` file just for your docs. It should
 look like this::
 
-    sphinx-better-theme==0.1.5
+    sphinx-better-theme==0.1.4
     # other dependencies for your docs if any
 
 I suggest putting it in your docs folder, e.g. at
