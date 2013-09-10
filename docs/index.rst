@@ -26,11 +26,14 @@ versions may work but have not been tested.
 Projects using sphinx-better-theme
 ----------------------------------
 
-* `mrjob <http://mrjob.readthedocs.org/en/latest/>`_ (both narrative and API
-  docs)
+* `mrjob <http://mrjob.readthedocs.org/en/latest/>`_ has tens of thousands of
+  words of guides and API docs.
 
-* `pivotal_tools <http://pythonhosted.org/pivotal_tools/>`_ (single-page
-  command line tool documentation)
+* `zhang-shasha <http://zhang-shasha.readthedocs.org/en/latest/>` is a single
+  page of simple Python library documentation.
+
+* `pivotal_tools <http://pythonhosted.org/pivotal_tools/>`_ is a single page of
+  command line tool documentation.
 
 History/Roadmap
 ---------------
