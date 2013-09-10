@@ -29,7 +29,7 @@ Projects using sphinx-better-theme
 * `mrjob <http://mrjob.readthedocs.org/en/latest/>`_ has tens of thousands of
   words of guides and API docs.
 
-* `zhang-shasha <http://zhang-shasha.readthedocs.org/en/latest/>` is a single
+* `zhang-shasha <http://zhang-shasha.readthedocs.org/en/latest/>`_ is a single
   page of simple Python library documentation.
 
 * `pivotal_tools <http://pythonhosted.org/pivotal_tools/>`_ is a single page of
