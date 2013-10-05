@@ -22,7 +22,9 @@ more and more of its inheritance from the basic theme.
 
 Feel free to read `the conf.py for this site`_ to get ideas for your own site.
 In particular, consider setting ``html_short_title`` to ``"Home"`` so the first
-breadcrumb says "Home" instead of your long project title.
+breadcrumb says "Home" instead of your long project title. You'll probably also
+be interested in `changing the sidebars
+<http://sphinx-doc.org/config.html#confval-html_sidebars>`_.
 
 .. _the conf.py for this site: https://raw.github.com/irskep/sphinx-better-theme/master/docs/conf.py
 
