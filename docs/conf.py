@@ -26,6 +26,8 @@ html_theme_options = {
     """,
     'cssfiles': ['_static/style.css'],
     'scriptfiles': ['_static/testing.js'],
+    'ga_ua': 'UAUAUA',
+    'ga_domain': 'DOMAIN',
 }
 html_theme_path = [better.better_theme_path]
 html_title = "{} {}".format(project, release)

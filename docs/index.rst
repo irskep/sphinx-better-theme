@@ -51,7 +51,8 @@ next/previous links
 **v0.1.4:** Semantic versioning, mobile bug fixes, sidebar slimming, style
 improvements
 
-**v0.1.5:** (planned) Remove a few useless options, allow remote CSS files
+**v0.1.5:** Remove a few useless options, allow remote CSS files, fix Google
+Analytics integration
 
 **v0.2:** (planned) Rewrite markup to be semantic and customizable
 
