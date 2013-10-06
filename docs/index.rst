@@ -1,8 +1,9 @@
-sphinx-better-theme
-===================
+sphinx-better-theme: usable documentation
+=========================================
 
-**sphinx-better-theme** is a theme for `Sphinx`_ that looks nice and is easy to
-style with CSS. See :doc:`anticipatory-faq` for details.
+**sphinx-better-theme** is a theme for `Sphinx`_ that looks nice, is easy to
+style with CSS, works well on small screens and mobile devices, and organizes
+the page better. See :doc:`why` for details.
 
 You can get the source and open issues `on Github.`_
 
@@ -15,7 +16,7 @@ You can get the source and open issues `on Github.`_
     installation.rst
     guide.rst
     demos.rst
-    anticipatory-faq.rst
+    why.rst
 
 Compatibility
 -------------

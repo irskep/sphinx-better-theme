@@ -32,7 +32,6 @@ html_title = "{} {}".format(project, release)
 html_short_title = "Home"
 html_sidebars = {
     '**': ['globaltoc.html'],
-    'index': ['globaltoc.html'],
 }
 
 html_logo = None
