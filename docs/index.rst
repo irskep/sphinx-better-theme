@@ -30,6 +30,9 @@ Projects using sphinx-better-theme
 * `mrjob <http://mrjob.readthedocs.org/en/latest/>`_ has tens of thousands of
   words of guides and API docs.
 
+* `Pillow <http://pillow.readthedocs.org/en/latest/>`_ is the modern fork of
+  the Python Imaging Library and recently got a new set of docs.
+
 * `zhang-shasha <http://zhang-shasha.readthedocs.org/en/latest/>`_ is a single
   page of simple Python library documentation.
 
@@ -92,10 +95,6 @@ interesting custom theme.
 
 .. possible projects to convince to switch:
 .. (Steve's to-do list for "write other projects' docs for them")
-
-.. pillow (https://github.com/python-imaging/Pillow)
-..  see https://github.com/python-imaging/Pillow/issues/282
-..  and https://github.com/python-imaging/Pillow/issues/316
 
 .. pymongo (http://api.mongodb.org/python/current/)
 
