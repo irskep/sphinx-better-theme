@@ -38,6 +38,9 @@ Projects using sphinx-better-theme
 
 * `pivotal_tools <http://pythonhosted.org/pivotal_tools/>`_ is a single page of
   command line tool documentation.
+  
+* `Rsyslog <http://www.rsyslog.com/doc/v8-stable/>`_ is a **r**\ ocket-fast **sys**\ tem for **log**
+  processing. It offers high-performance, great security features and a modular design.
 
 History/Roadmap
 ---------------
