@@ -107,11 +107,6 @@ a.headerlink {
 
 /* code styles */
 
-pre, tt {
-    background-color: #eee;
-    color: #333;
-}
-
 pre {
     font-family: Monaco, Consolas, "Lucida Console", monospace;
     margin: 1rem -5px;
