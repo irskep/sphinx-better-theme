@@ -297,6 +297,11 @@ p.admonition-title:after {
     background: #d6d6d6;
 }
 
+.hint {
+  background: #ffc;
+  border: 1px solid #dda;
+}
+
 .viewcode-block:target {
     background-color: #f4debf;
     border-top: 1px solid #ac9;
