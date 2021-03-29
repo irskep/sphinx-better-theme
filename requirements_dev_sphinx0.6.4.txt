@@ -1,6 +1,6 @@
 Jinja2==2.3.1
 MarkupSafe==0.18
-Pygments==1.6
+Pygments==2.7.4
 Sphinx==0.6.4
 docopt==0.6.1
 docutils==0.11
